@@ -1,0 +1,17 @@
+version: "3.8"
+
+services: 
+  backend:
+    image: quizz-back
+    build:
+      context: backend
+    restart: always
+    environment: 
+      DEBUG: 1
+    ports: 
+      - 8010:8000
+    volumes:
+      - ./backend/src:/app/backend
+
+  # frontend:
+  #   ...
