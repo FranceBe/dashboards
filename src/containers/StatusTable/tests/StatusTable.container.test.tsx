@@ -23,14 +23,14 @@ describe('StatusTable', () => {
     render(<StatusTable devicesStatus={devicesStatus} />)
     expect(screen.getAllByTestId('status-line-container')).toHaveLength(devicesStatus.length)
   })
-  it('should sort by Name in asc order when header "name" is clicked', () => {
+  it('should sort by serial_number in asc order when header "serial_number" is clicked', () => {
     render(<StatusTable devicesStatus={devicesStatus} />)
     const nameHeader = screen.getAllByRole('columnheader')[0]
     userEvent.click(nameHeader)
     const firstColumn = screen.getAllByTestId('status-line-container')[0]
     expect(firstColumn).toHaveClass('line-device_0')
   })
-  it('should sort by Name in desc order when header "name" is clicked twice', () => {
+  it('should sort by serial_number in desc order when header "serial_number" is clicked twice', () => {
     render(<StatusTable devicesStatus={devicesStatus} />)
     const nameHeader = screen.getAllByRole('columnheader')[0]
     userEvent.click(nameHeader)
