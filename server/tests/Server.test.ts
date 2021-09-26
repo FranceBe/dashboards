@@ -64,14 +64,14 @@ describe('Server', () => {
     testServer.app = express()
     // If server has an instance and a app property with use
     // Mock use, then init the Server to check it correctly
-    // has called use 3 times and get twice ('/api/devices' & '/')
+    // has called use 3 times and get 3 times ('/api/devices', '/api/device/:id' & '/')
     if (testServer && testServer.app && testServer.app.use && testServer.app.get) {
       testServer.app.use = jest.fn()
       testServer.app.get = jest.fn()
       testServer.init()
 
       expect(testServer.app.use).toHaveBeenCalledTimes(3)
-      expect(testServer.app.get).toHaveBeenCalledTimes(2)
+      expect(testServer.app.get).toHaveBeenCalledTimes(3)
       testServer.stop()
     }
   })
