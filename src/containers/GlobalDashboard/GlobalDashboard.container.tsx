@@ -1,14 +1,9 @@
-import {
-  ChartsContainer,
-  Dashboard,
-  StatusTableContainer,
-} from 'containers/GlobalDashboard/globalDasboard.style'
-import StatusTable from 'containers/StatusTable'
-import VoltageStateContainer from 'containers/VoltageStats'
+import { Dashboard, InfoTableContainer } from 'containers/GlobalDashboard/globalDasboard.style'
+import { getInfoTableData, getVoltageStats } from 'containers/GlobalDashboard/globalDashboard.utils'
+import InfoTable from 'containers/InfoTable'
+import VoltageStats from 'containers/VoltageStats'
 import React, { useEffect, useState } from 'react'
 import { DashboardDeviceable } from 'types/dashboardDevice'
-
-import { getStatusTableData, getVoltageStats } from './globalDashboard.utils'
 
 export const GlobalDashboard: React.FC = () => {
   const [devices, setDevices] = useState<DashboardDeviceable[]>([])
@@ -30,14 +25,13 @@ export const GlobalDashboard: React.FC = () => {
     }
   }, [])
 
+  console.log(devices)
   return (
     <Dashboard>
-      <StatusTableContainer>
-        <StatusTable devicesStatus={getStatusTableData(devices)} />
-      </StatusTableContainer>
-      <ChartsContainer>
-        <VoltageStateContainer devicesVoltage={getVoltageStats(devices)} />
-      </ChartsContainer>
+      <VoltageStats devicesVoltage={getVoltageStats(devices)} />
+      <InfoTableContainer>
+        <InfoTable devicesInfo={getInfoTableData(devices)} />
+      </InfoTableContainer>
     </Dashboard>
   )
 }

@@ -1,4 +1,4 @@
-import SignalCellularAltIcon from '@material-ui/icons/SignalCellularAlt'
+import SignalCellular4BarIcon from '@material-ui/icons/SignalCellular4Bar'
 import SignalCellularOffIcon from '@material-ui/icons/SignalCellularOff'
 import { StatusContainer } from 'components/Status/status.style'
 import React from 'react'
@@ -9,7 +9,7 @@ export const Status: React.FC<StatusProps> = ({ status }) => {
     status === 'disconnected' ? (
       <SignalCellularOffIcon data-testid={'signal-off'} />
     ) : (
-      <SignalCellularAltIcon data-testid={'signal-on'} />
+      <SignalCellular4BarIcon data-testid={'signal-on'} />
     )
 
   return (
