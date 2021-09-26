@@ -7,7 +7,7 @@ import { render } from '@testing-library/react'
 import ChartBar from 'components/ChartBar'
 import React from 'react'
 
-describe('ChartBart', () => {
+describe('ChartBar', () => {
   const values = [
     { name: 'name1', value: 3 },
     { name: 'name2', value: 1 },

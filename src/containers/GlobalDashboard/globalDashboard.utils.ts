@@ -1,3 +1,4 @@
+import { ConnectionTypeDataable } from 'types/connectionType'
 import { DashboardDeviceable } from 'types/dashboardDevice'
 import { InfoTableable } from 'types/infoTable'
 import { VoltageStat } from 'types/voltageStats'
@@ -17,3 +18,14 @@ export const getVoltageStats = (devices: DashboardDeviceable[]): VoltageStat[] =
     name: device.serial_number,
     voltage: device.voltage,
   }))
+
+export const getConnectionTypeData = (devices: DashboardDeviceable[]): ConnectionTypeDataable[] => {
+  const wifiLength = devices.filter((device) => device.connection_type === 'wifi').length
+  const ethernetLength = devices.filter((device) => device.connection_type === 'ethernet').length
+  const cellularLength = devices.filter((device) => device.connection_type === 'cellular').length
+  return [
+    { connection_type: 'ethernet', length: ethernetLength },
+    { connection_type: 'wifi', length: wifiLength },
+    { connection_type: 'cellular', length: cellularLength },
+  ]
+}
