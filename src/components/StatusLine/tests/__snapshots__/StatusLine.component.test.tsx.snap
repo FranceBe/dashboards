@@ -2,7 +2,8 @@
 
 exports[`StatusLine Given status is "connected" should match snapshot 1`] = `
 <div
-  class="sc-gtsrHT hTnfwy"
+  class="sc-gtsrHT hTnfwy line-device_0"
+  data-testid="status-line-container"
 >
   <div>
     device_0
@@ -29,7 +30,8 @@ exports[`StatusLine Given status is "connected" should match snapshot 1`] = `
 
 exports[`StatusLine Given status is "disconnected" should match snapshot 1`] = `
 <div
-  class="sc-gtsrHT hTnfwy"
+  class="sc-gtsrHT hTnfwy line-device_0"
+  data-testid="status-line-container"
 >
   <div>
     device_0
