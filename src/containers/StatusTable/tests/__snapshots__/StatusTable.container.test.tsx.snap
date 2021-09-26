@@ -1,0 +1,663 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusTable should match snapshot 1`] = `
+.c17 {
+  background-color: #65db25;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.c18 {
+  background-color: #eb4034;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.c16 {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.c0 .rdt_TableCell > div {
+  width: 100%;
+}
+
+.c0 .rdt_TableCell:last-of-type {
+  min-width: 0;
+}
+
+.c3 {
+  position: relative;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  color: rgba(0,0,0,0.87);
+  background-color: #FFFFFF;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: rgba(0,0,0,0.87);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+  background-color: #FFFFFF;
+  min-height: 56px;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0,0,0,.12);
+  border-bottom-style: solid;
+}
+
+.c6 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  line-height: normal;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.c14 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  line-height: normal;
+  padding-left: 16px;
+  padding-right: 16px;
+  word-break: break-word;
+}
+
+.c7 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
+  min-width: 100px;
+}
+
+.c11 {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
+  min-width: 110px;
+}
+
+.c15 div:first-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.87);
+  background-color: #FFFFFF;
+  min-height: 48px;
+}
+
+.c13:not(:last-of-type) {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0,0,0,.12);
+}
+
+.c10 {
+  padding: 2px;
+  color: inherit;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  opacity: 0;
+}
+
+.c8 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c8:hover:focus {
+  color: rgba(0,0,0,0.87);
+}
+
+.c8:hover {
+  color: rgba(0,0,0,.54);
+}
+
+.c8:hover:active {
+  color: rgba(0,0,0,.54);
+}
+
+.c8 span.__rdt_custom_sort_icon__ i,
+.c8 span.__rdt_custom_sort_icon__ svg {
+  -webkit-transform: 'translate3d(0, 0, 0)';
+  -ms-transform: 'translate3d(0, 0, 0)';
+  transform: 'translate3d(0, 0, 0)';
+  opacity: 0;
+  color: inherit;
+  font-size: 18px !important;
+  height: 18px !important;
+  width: 18px !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition-duration: 125ms;
+  transition-duration: 125ms;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.c8 span.__rdt_custom_sort_icon__.asc i,
+.c8 span.__rdt_custom_sort_icon__.asc svg {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c8:hover span,
+.c8:hover span.__rdt_custom_sort_icon__ * {
+  opacity: 0.8;
+}
+
+.c9 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  position: relative;
+  width: 100%;
+  border-radius: inherit;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-height: 0;
+}
+
+.c2 {
+  position: relative;
+  width: 100%;
+  display: table;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3 rdt_Table"
+        role="table"
+      >
+        <div
+          class="c4 rdt_TableHead"
+          role="rowgroup"
+        >
+          <div
+            class="c5 rdt_TableHeadRow"
+            role="row"
+          >
+            <div
+              class="c6 c7 rdt_TableCol"
+              data-column-id="1"
+            >
+              <div
+                class="c8 rdt_TableCol_Sortable"
+                data-column-id="1"
+                data-sort-id="1"
+                role="columnheader"
+                tabindex="0"
+              >
+                <div
+                  class="c9"
+                  data-column-id="1"
+                >
+                  name
+                </div>
+                <span
+                  class="c10"
+                >
+                  ▲
+                </span>
+              </div>
+            </div>
+            <div
+              class="c6 c11 rdt_TableCol"
+              data-column-id="2"
+            >
+              <div
+                class="c8 rdt_TableCol_Sortable"
+                data-column-id="2"
+                data-sort-id="2"
+                role="columnheader"
+                tabindex="0"
+              >
+                <div
+                  class="c9"
+                  data-column-id="2"
+                >
+                  status
+                </div>
+                <span
+                  class="c10"
+                >
+                  ▲
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c12 rdt_TableBody"
+          role="rowgroup"
+        >
+          <div
+            class="c13 rdt_TableRow"
+            id="row-0"
+            role="row"
+          >
+            <div
+              class="c14 c7 c15 rdt_TableCell"
+              data-column-id="1"
+              data-tag="allowRowEvents"
+              id="cell-1-undefined"
+              role="gridcell"
+            >
+              <div
+                data-tag="allowRowEvents"
+              >
+                <div
+                  class="c16 line-device_2"
+                  data-testid="status-line-container"
+                >
+                  <div>
+                    device_2
+                  </div>
+                  <div
+                    class="c17"
+                    data-testid="status-container"
+                    status="connected"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      data-testid="signal-on"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17 4h3v16h-3zM5 14h3v6H5zm6-5h3v11h-3z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="c14 c11 c15 rdt_TableCell"
+              data-column-id="2"
+              data-tag="allowRowEvents"
+              id="cell-2-undefined"
+              role="gridcell"
+            >
+              <div
+                data-tag="allowRowEvents"
+              >
+                <div />
+              </div>
+            </div>
+          </div>
+          <div
+            class="c13 rdt_TableRow"
+            id="row-1"
+            role="row"
+          >
+            <div
+              class="c14 c7 c15 rdt_TableCell"
+              data-column-id="1"
+              data-tag="allowRowEvents"
+              id="cell-1-undefined"
+              role="gridcell"
+            >
+              <div
+                data-tag="allowRowEvents"
+              >
+                <div
+                  class="c16 line-device_0"
+                  data-testid="status-line-container"
+                >
+                  <div>
+                    device_0
+                  </div>
+                  <div
+                    class="c17"
+                    data-testid="status-container"
+                    status="connected"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      data-testid="signal-on"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17 4h3v16h-3zM5 14h3v6H5zm6-5h3v11h-3z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="c14 c11 c15 rdt_TableCell"
+              data-column-id="2"
+              data-tag="allowRowEvents"
+              id="cell-2-undefined"
+              role="gridcell"
+            >
+              <div
+                data-tag="allowRowEvents"
+              >
+                <div />
+              </div>
+            </div>
+          </div>
+          <div
+            class="c13 rdt_TableRow"
+            id="row-2"
+            role="row"
+          >
+            <div
+              class="c14 c7 c15 rdt_TableCell"
+              data-column-id="1"
+              data-tag="allowRowEvents"
+              id="cell-1-undefined"
+              role="gridcell"
+            >
+              <div
+                data-tag="allowRowEvents"
+              >
+                <div
+                  class="c16 line-device_1"
+                  data-testid="status-line-container"
+                >
+                  <div>
+                    device_1
+                  </div>
+                  <div
+                    class="c18"
+                    data-testid="status-container"
+                    status="disconnected"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      data-testid="signal-off"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 1l-8.59 8.59L21 18.18V1zM4.77 4.5L3.5 5.77l6.36 6.36L1 21h17.73l2 2L22 21.73 4.77 4.5z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="c14 c11 c15 rdt_TableCell"
+              data-column-id="2"
+              data-tag="allowRowEvents"
+              id="cell-2-undefined"
+              role="gridcell"
+            >
+              <div
+                data-tag="allowRowEvents"
+              >
+                <div />
+              </div>
+            </div>
+          </div>
+          <div
+            class="c13 rdt_TableRow"
+            id="row-3"
+            role="row"
+          >
+            <div
+              class="c14 c7 c15 rdt_TableCell"
+              data-column-id="1"
+              data-tag="allowRowEvents"
+              id="cell-1-undefined"
+              role="gridcell"
+            >
+              <div
+                data-tag="allowRowEvents"
+              >
+                <div
+                  class="c16 line-device_4"
+                  data-testid="status-line-container"
+                >
+                  <div>
+                    device_4
+                  </div>
+                  <div
+                    class="c17"
+                    data-testid="status-container"
+                    status="connected"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      data-testid="signal-on"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17 4h3v16h-3zM5 14h3v6H5zm6-5h3v11h-3z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="c14 c11 c15 rdt_TableCell"
+              data-column-id="2"
+              data-tag="allowRowEvents"
+              id="cell-2-undefined"
+              role="gridcell"
+            >
+              <div
+                data-tag="allowRowEvents"
+              >
+                <div />
+              </div>
+            </div>
+          </div>
+          <div
+            class="c13 rdt_TableRow"
+            id="row-4"
+            role="row"
+          >
+            <div
+              class="c14 c7 c15 rdt_TableCell"
+              data-column-id="1"
+              data-tag="allowRowEvents"
+              id="cell-1-undefined"
+              role="gridcell"
+            >
+              <div
+                data-tag="allowRowEvents"
+              >
+                <div
+                  class="c16 line-device_3"
+                  data-testid="status-line-container"
+                >
+                  <div>
+                    device_3
+                  </div>
+                  <div
+                    class="c18"
+                    data-testid="status-container"
+                    status="disconnected"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      data-testid="signal-off"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M21 1l-8.59 8.59L21 18.18V1zM4.77 4.5L3.5 5.77l6.36 6.36L1 21h17.73l2 2L22 21.73 4.77 4.5z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="c14 c11 c15 rdt_TableCell"
+              data-column-id="2"
+              data-tag="allowRowEvents"
+              id="cell-2-undefined"
+              role="gridcell"
+            >
+              <div
+                data-tag="allowRowEvents"
+              >
+                <div />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
