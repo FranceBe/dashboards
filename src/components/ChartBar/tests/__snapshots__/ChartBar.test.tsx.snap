@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ChartBart should match snapshot 1`] = `
+exports[`ChartBar should match snapshot 1`] = `
 <div
   data-testid="chart-bar"
 >

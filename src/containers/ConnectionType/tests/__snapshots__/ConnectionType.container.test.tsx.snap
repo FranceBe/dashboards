@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConnectionType should match snapshot 1`] = `
+<div
+  data-testid="chart-pie"
+>
+  <div
+    class="recharts-wrapper"
+    style="position: relative; cursor: default; width: 400px; height: 400px;"
+  >
+    <svg
+      class="recharts-surface"
+      cx="50%"
+      cy="50%"
+      height="400"
+      version="1.1"
+      viewBox="0 0 400 400"
+      width="400"
+    >
+      <defs>
+        <clippath
+          id="recharts1-clip"
+        >
+          <rect
+            height="390"
+            width="390"
+            x="5"
+            y="5"
+          />
+        </clippath>
+      </defs>
+      <g
+        class="recharts-layer recharts-pie"
+      >
+        <g
+          class="recharts-layer"
+        >
+          <g
+            class="recharts-layer recharts-pie-sector"
+          />
+          <g
+            class="recharts-layer recharts-pie-sector"
+          />
+          <g
+            class="recharts-layer recharts-pie-sector"
+          />
+        </g>
+      </g>
+    </svg>
+    <div
+      class="recharts-tooltip-wrapper"
+      style="transform: translate(undefinedpx, undefinedpx); pointer-events: none; visibility: hidden; position: absolute; top: 0px; left: 0px;"
+    >
+      <div
+        class="sc-gtsrHT dZVimF"
+      >
+        ethernet
+        : 
+        0
+      </div>
+    </div>
+  </div>
+</div>
+`;

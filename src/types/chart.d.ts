@@ -1,6 +1,4 @@
-import any = jasmine.any
-
-export type ChartBarProps = {
+export type ChartProps = {
   data: Record<string, string | number>[]
   valueKey: string
   nameKey: string

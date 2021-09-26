@@ -1,9 +1,9 @@
 import React from 'react'
 import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts'
 import { palette } from 'styles/variables'
-import { ChartBarProps } from 'types/chartBar'
+import { ChartProps } from 'types/chart'
 
-export const ChartBar: React.FC<ChartBarProps> = ({ data, valueKey, nameKey }) => {
+export const ChartBar: React.FC<ChartProps> = ({ data, valueKey, nameKey }) => {
   return (
     <div data-testid={'chart-bar'}>
       <BarChart width={500} height={300} data={data}>

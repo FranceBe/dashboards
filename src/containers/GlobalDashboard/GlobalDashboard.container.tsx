@@ -1,5 +1,14 @@
-import { Dashboard, InfoTableContainer } from 'containers/GlobalDashboard/globalDasboard.style'
-import { getInfoTableData, getVoltageStats } from 'containers/GlobalDashboard/globalDashboard.utils'
+import ConnectionType from 'containers/ConnectionType'
+import {
+  ChartsContainer,
+  Dashboard,
+  InfoTableContainer,
+} from 'containers/GlobalDashboard/globalDasboard.style'
+import {
+  getConnectionTypeData,
+  getInfoTableData,
+  getVoltageStats,
+} from 'containers/GlobalDashboard/globalDashboard.utils'
 import InfoTable from 'containers/InfoTable'
 import VoltageStats from 'containers/VoltageStats'
 import React, { useEffect, useState } from 'react'
@@ -28,7 +37,10 @@ export const GlobalDashboard: React.FC = () => {
   console.log(devices)
   return (
     <Dashboard>
-      <VoltageStats devicesVoltage={getVoltageStats(devices)} />
+      <ChartsContainer>
+        <VoltageStats devicesVoltage={getVoltageStats(devices)} />
+        <ConnectionType devicesConnectionType={getConnectionTypeData(devices)} />
+      </ChartsContainer>
       <InfoTableContainer>
         <InfoTable devicesInfo={getInfoTableData(devices)} />
       </InfoTableContainer>

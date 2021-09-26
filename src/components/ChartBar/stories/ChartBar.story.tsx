@@ -1,7 +1,7 @@
 import { Meta } from '@storybook/react/types-6-0'
 import ChartBar from 'components/ChartBar'
 import React from 'react'
-import { ChartBarProps } from 'types/chartBar'
+import { ChartProps } from 'types/chart'
 
 export default {
   component: ChartBar,
@@ -16,6 +16,6 @@ const values = [
   { name: 'name5', value: 12 },
   { name: 'name6', value: 12.9 },
 ]
-export const Default: React.FC<ChartBarProps> = () => (
+export const Default: React.FC<ChartProps> = () => (
   <ChartBar data={values} nameKey={'name'} valueKey={'value'} />
 )
