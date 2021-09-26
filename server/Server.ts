@@ -48,6 +48,20 @@ export class Server implements Serverable {
         res.json(body)
       })
     })
+    this.app.get('/api/device/:id', (req: Request, res: Response) => {
+      const baseUrl = 'http://localhost:8010/device'
+      request(
+        `${baseUrl}/${req.params.id}`,
+        { json: true, qs: req.query },
+        (error, response, body) => {
+          if (error) {
+            res.send(error)
+            return
+          }
+          res.json(body)
+        },
+      )
+    })
     // Connect the express backend to the frontend
     this.app.get('/', (req: Request, res: Response): void => {
       res.sendFile(htmlFile)
