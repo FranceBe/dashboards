@@ -336,7 +336,7 @@ exports[`StatusTable should match snapshot 1`] = `
                   class="c9"
                   data-column-id="1"
                 >
-                  name
+                  serial_number
                 </div>
                 <span
                   class="c10"

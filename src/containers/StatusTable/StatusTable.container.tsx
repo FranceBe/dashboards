@@ -8,9 +8,13 @@ import { StatusTableProps } from 'types/statusTable'
 export const StatusTable: React.FC<StatusTableProps> = ({ devicesStatus }) => {
   const columns: TableColumn<StatusLineProps>[] = [
     {
-      name: 'name',
+      name: 'serial_number',
       selector: (row) => <StatusLine name={row.name} status={row.status} />,
-      sortFunction: (rowA, rowB) => rowA.name.toLowerCase().localeCompare(rowB.name.toLowerCase()),
+      sortFunction: (rowA, rowB) =>
+        rowA.name.toLowerCase().localeCompare(rowB.name.toLowerCase(), undefined, {
+          numeric: true,
+          sensitivity: 'base',
+        }),
       sortable: true,
     },
     {

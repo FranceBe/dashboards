@@ -1,9 +1,9 @@
-import Home from 'containers/Home'
+import GlobalDashboard from 'containers/GlobalDashboard'
 import { Routable } from 'types/route'
 
 export const routes: Routable[] = [
   {
-    component: Home,
+    component: GlobalDashboard,
     exact: true,
     path: '/',
   },
