@@ -86,6 +86,7 @@
     "jest": "27.0.4",
     "jest-express": "1.12.0",
     "jest-styled-components": "7.0.5",
+    "moment": "2.29.1",
     "per-env": "1.0.2",
     "prettier": "2.3.1",
     "react-data-table-component": "7.3.1",

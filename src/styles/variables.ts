@@ -4,8 +4,11 @@ export const palette: { [key: string]: string } = {
   blue_primary: '#0E074B',
   green_primary: '#65db25',
   grey_primary: '#343536',
+  pink_primary: '#EDDDD4',
+  purple_primary: '#8783A5',
   red_primary: '#eb4034',
   white: '#ffffff',
+  yellow_light: '#FEFADC',
 }
 
 // Spaces to use to respect an 8px grid
