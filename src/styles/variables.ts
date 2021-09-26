@@ -1,6 +1,7 @@
 // Colors to use matching the graphic chart
 export const palette: { [key: string]: string } = {
   blue_light: '#f0f0fc',
+  blue_primary: '#0E074B',
   green_primary: '#65db25',
   grey_primary: '#343536',
   red_primary: '#eb4034',
