@@ -11,7 +11,7 @@ export const ChartBar: React.FC<ChartProps> = ({ data, valueKey, nameKey }) => {
         <XAxis dataKey={nameKey} />
         <YAxis />
         <Tooltip />
-        <Legend />
+        <Legend height={320} />
         <Bar dataKey={valueKey} fill={palette.blue_primary} />
       </BarChart>
     </div>

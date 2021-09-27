@@ -1,4 +1,4 @@
-import ConnectionType from 'containers/ConnectionType'
+import ConnectionTypeStat from 'containers/ConnectionTypeStat'
 import {
   ChartsContainer,
   Dashboard,
@@ -11,38 +11,21 @@ import {
 } from 'containers/GlobalDashboard/globalDashboard.utils'
 import InfoTable from 'containers/InfoTable'
 import VoltageStats from 'containers/VoltageStats'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { DashboardDeviceable } from 'types/dashboardDevice'
+import { useFetch } from 'utils/useFetch'
 
 export const GlobalDashboard: React.FC = () => {
-  const [devices, setDevices] = useState<DashboardDeviceable[]>([])
+  const { data } = useFetch<DashboardDeviceable>('/api/devices')
 
-  useEffect(() => {
-    let shouldUpdateState = true
-    fetch('/api/devices')
-      .then((res) => res.json())
-      .then((data) => {
-        if (shouldUpdateState) {
-          setDevices(data.results)
-        }
-      })
-      .catch((err) => {
-        throw Error(err)
-      })
-    return () => {
-      shouldUpdateState = false
-    }
-  }, [])
-
-  console.log(devices)
   return (
     <Dashboard>
       <ChartsContainer>
-        <VoltageStats devicesVoltage={getVoltageStats(devices)} />
-        <ConnectionType devicesConnectionType={getConnectionTypeData(devices)} />
+        <VoltageStats devicesVoltage={getVoltageStats(data)} />
+        <ConnectionTypeStat devicesConnectionType={getConnectionTypeData(data)} />
       </ChartsContainer>
       <InfoTableContainer>
-        <InfoTable devicesInfo={getInfoTableData(devices)} />
+        <InfoTable devicesInfo={getInfoTableData(data)} />
       </InfoTableContainer>
     </Dashboard>
   )
