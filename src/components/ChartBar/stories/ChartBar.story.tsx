@@ -17,5 +17,7 @@ const values = [
   { name: 'name6', value: 12.9 },
 ]
 export const Default: React.FC<ChartProps> = () => (
-  <ChartBar data={values} nameKey={'name'} valueKey={'value'} />
+  <div style={{ margin: '50px' }}>
+    <ChartBar data={values} nameKey={'name'} valueKey={'value'} />
+  </div>
 )

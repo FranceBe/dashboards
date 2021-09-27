@@ -6,7 +6,7 @@ import {
 import { ConnectionTypeDataable } from 'types/connectionType'
 import { DashboardDeviceable } from 'types/dashboardDevice'
 import { InfoTableable } from 'types/infoTable'
-import { VoltageStat } from 'types/voltageStats'
+import { VoltageStatable } from 'types/voltageStats'
 
 describe('GlobalDashboard Utils', () => {
   const param: DashboardDeviceable[] = [
@@ -55,8 +55,8 @@ describe('GlobalDashboard Utils', () => {
     })
   })
   describe('getVoltageStats', () => {
-    it('should return VoltageStat[] type shape data when DashboardDeviceable[] type params in provided', () => {
-      const result: VoltageStat[] = getVoltageStats(param)
+    it('should return VoltageStatable[] type shape data when DashboardDeviceable[] type params in provided', () => {
+      const result: VoltageStatable[] = getVoltageStats(param)
       expect(result).toEqual([
         {
           name: param[0].serial_number,

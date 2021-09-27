@@ -39,9 +39,10 @@ export const ChartPie: React.FC<ChartProps> = ({ data, valueKey, nameKey }) => {
   const renderTooltipContent = ({ payload }: any) => {
     const index = payload.length && payload[0].name
     const value = payload.length && payload[0].value
+    const legendName = nameKey === 'name' ? index : data[index][nameKey]
     return (
       <TooltipContainer>
-        {data[index][nameKey]}: {value}
+        {legendName}: {value}
       </TooltipContainer>
     )
   }
