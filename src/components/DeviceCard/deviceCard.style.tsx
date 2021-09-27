@@ -1,11 +1,13 @@
 import styled from 'styled-components'
-import { palette, spaces } from 'styles/variables'
+import { elements, palette, spaces } from 'styles/variables'
 
 export const CardContainer = styled.div`
   background-color: ${palette.white};
   display: flex;
   flex-direction: column;
   padding: ${spaces.regular};
+  box-shadow: ${elements.box_shadow};
+  border: 1px solid ${palette.grey_primary};
   border-radius: ${spaces.small};
   .small-icon {
     margin-right: ${spaces.small};

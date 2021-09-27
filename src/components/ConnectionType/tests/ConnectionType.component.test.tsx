@@ -14,7 +14,7 @@ describe('ConnectionType', () => {
     })
     it('should have green_primary background color', () => {
       const { container } = render(<ConnectionType connection_type={'wifi'} />)
-      expect(container.firstChild).toHaveStyleRule('background-color', palette.purple_primary)
+      expect(container.firstChild).toHaveStyleRule('background-color', palette.purple_secondary)
     })
     it('should find the connected icon', () => {
       render(<ConnectionType connection_type={'wifi'} />)
@@ -28,7 +28,7 @@ describe('ConnectionType', () => {
     })
     it('should have green_primary background color', () => {
       const { container } = render(<ConnectionType connection_type={'ethernet'} />)
-      expect(container.firstChild).toHaveStyleRule('background-color', palette.pink_primary)
+      expect(container.firstChild).toHaveStyleRule('background-color', palette.blue_primary)
     })
     it('should find the connected icon', () => {
       render(<ConnectionType connection_type={'ethernet'} />)
@@ -42,7 +42,7 @@ describe('ConnectionType', () => {
     })
     it('should have green_primary background color', () => {
       const { container } = render(<ConnectionType connection_type={'cellular'} />)
-      expect(container.firstChild).toHaveStyleRule('background-color', palette.yellow_light)
+      expect(container.firstChild).toHaveStyleRule('background-color', palette.green_secondary)
     })
     it('should find the connected icon', () => {
       render(<ConnectionType connection_type={'cellular'} />)

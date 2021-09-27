@@ -26,6 +26,7 @@ export const GlobalDashboard: React.FC = () => {
     <Dashboard>
       {devicesData ? (
         <>
+          <h1>Global Dashboard</h1>
           <ChartsContainer>
             <VoltageStats devicesVoltage={getVoltageStats(devicesData)} />
             <ConnectionTypeStat devicesConnectionType={getConnectionTypeData(devicesData)} />

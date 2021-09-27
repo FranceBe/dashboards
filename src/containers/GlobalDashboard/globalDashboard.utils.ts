@@ -1,3 +1,4 @@
+import { palette } from 'styles/variables'
 import { ConnectionTypeDataable } from 'types/connectionType'
 import { DashboardDeviceable } from 'types/dashboardDevice'
 import { InfoTableable } from 'types/infoTable'
