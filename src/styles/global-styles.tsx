@@ -7,4 +7,10 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${palette.blue_light};
     color: ${palette.grey_primary};
   }
+  a {
+    text-decoration: none;
+    :active {
+      color: ${palette.blue_primary};
+    }
+  }
 `

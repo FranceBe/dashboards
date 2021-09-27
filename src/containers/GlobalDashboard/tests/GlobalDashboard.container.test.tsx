@@ -5,6 +5,7 @@ import { GlobalDashboard } from 'containers/GlobalDashboard'
 import fetch from 'jest-fetch-mock'
 import moment from 'moment'
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 describe('GlobalDashboard', () => {
   // Set up
@@ -52,11 +53,23 @@ describe('GlobalDashboard', () => {
     it('should match snapshot', async () => {
       // We need to await the render because GlobalDashboard use
       // The useFetch hooks
-      const { container } = await waitFor(() => render(<GlobalDashboard />))
+      const { container } = await waitFor(() =>
+        render(
+          <Router>
+            <GlobalDashboard />
+          </Router>,
+        ),
+      )
       expect(container.firstChild).toMatchSnapshot()
     })
     it('should display VoltageStats', async () => {
-      await waitFor(() => render(<GlobalDashboard />))
+      await waitFor(() =>
+        render(
+          <Router>
+            <GlobalDashboard />
+          </Router>,
+        ),
+      )
       // We test the legend text 'voltage' that should be displayed in the
       // ChartBar component used in VoltageStats
       expect(screen.getByText('voltage')).toBeInTheDocument()
@@ -64,17 +77,28 @@ describe('GlobalDashboard', () => {
       expect(screen.getByTestId('chart-bar')).toBeInTheDocument()
     })
     it('should display ConnectionTypeStat', async () => {
-      await waitFor(() => render(<GlobalDashboard />))
+      await waitFor(() =>
+        render(
+          <Router>
+            <GlobalDashboard />
+          </Router>,
+        ),
+      )
       // We test the presence of ChartPie component used in ConnectionTypeStat
       expect(screen.getByTestId('chart-pie')).toBeInTheDocument()
     })
     it('should display InfoTable', async () => {
-      await waitFor(() => render(<GlobalDashboard />))
+      await waitFor(() =>
+        render(
+          <Router>
+            <GlobalDashboard />
+          </Router>,
+        ),
+      )
       // We test the presence of each serial_number as text
-      // We should find 3 times the serial_number as text
-      // For the 1st item because it is rendered twice in ChartBar (as axis legend and tooltip)
-      // And twice for the other items because it is rendered once in ChartBar (only as axis legend)
-      expect(screen.getAllByText('device_0')).toHaveLength(3)
+      // We should find 2 times the serial_number as text
+      // because it is rendered once in ChartBar (as axis legend)
+      expect(screen.getAllByText('device_0')).toHaveLength(2)
       expect(screen.getAllByText('device_1')).toHaveLength(2)
       expect(screen.getAllByText('device_2')).toHaveLength(2)
       // We test the presence of each mac_wifi as text

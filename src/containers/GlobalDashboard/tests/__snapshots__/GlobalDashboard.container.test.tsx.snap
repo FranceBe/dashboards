@@ -2,10 +2,10 @@
 
 exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
 <div
-  class="sc-dlnjwi jNugBK"
+  class="sc-hKFxyN kOpRUW"
 >
   <div
-    class="sc-eCApnc jLKQe"
+    class="sc-jSFjdj hmMjOD"
   >
     <div>
       <div
@@ -605,9 +605,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
               <p
                 class="recharts-tooltip-label"
                 style="margin: 0px;"
-              >
-                0
-              </p>
+              />
             </div>
           </div>
         </div>
@@ -664,7 +662,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
           style="transform: translate(undefinedpx, undefinedpx); pointer-events: none; visibility: hidden; position: absolute; top: 0px; left: 0px;"
         >
           <div
-            class="sc-gtsrHT dZVimF"
+            class="sc-dlnjwi fFCfFx"
           >
             ethernet
             : 
@@ -675,165 +673,165 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
     </div>
   </div>
   <div
-    class="sc-hKFxyN gcWuxB"
+    class="sc-eCApnc fFDBDd"
   >
     <div
-      class="sc-iJCRrE fqqaic"
+      class="sc-giAqHp dKnNzD"
     >
       <div
-        class="sc-ezzafa iHcNzY"
+        class="sc-bYwzuL cHBuQs"
       >
         <div
-          class="sc-iCoGMd bGEYcm rdt_Table"
+          class="sc-fujyAs iUmakL rdt_Table"
           role="table"
         >
           <div
-            class="sc-fujyAs fjYwFu rdt_TableHead"
+            class="sc-pNWdM fpRDes rdt_TableHead"
             role="rowgroup"
           >
             <div
-              class="sc-pNWdM lfjlYU rdt_TableHeadRow"
+              class="sc-jrsJWt gncVDq rdt_TableHeadRow"
               role="row"
             >
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-fFSPTT hCPiRP dlLhQd cZNhtN rdt_TableCol"
+                class="sc-kEqXSa sc-iqAclL sc-bkbkJK jbAPGc glyDaK fWvSPD rdt_TableCol"
                 data-column-id="1"
               >
                 <div
-                  class="sc-bkbkJK nDHnj rdt_TableCol_Sortable"
+                  class="sc-iemWCZ ghecnV rdt_TableCol_Sortable"
                   data-column-id="1"
                   data-sort-id="1"
                   role="columnheader"
                   tabindex="0"
                 >
                   <div
-                    class="sc-iemWCZ ifvWin"
+                    class="sc-dIvrsQ jikzOz"
                     data-column-id="1"
                   >
                     serial_number
                   </div>
                   <span
-                    class="sc-fnVZcZ hAsdXb"
+                    class="sc-fFSPTT eMJmB"
                   >
                     ▲
                   </span>
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-fFSPTT hCPiRP dlLhQd cZNhtN rdt_TableCol"
+                class="sc-kEqXSa sc-iqAclL sc-bkbkJK jbAPGc glyDaK fWvSPD rdt_TableCol"
                 data-column-id="2"
               >
                 <div
-                  class="sc-bkbkJK nDHnj rdt_TableCol_Sortable"
+                  class="sc-iemWCZ ghecnV rdt_TableCol_Sortable"
                   data-column-id="2"
                   data-sort-id="2"
                   role="columnheader"
                   tabindex="0"
                 >
                   <div
-                    class="sc-iemWCZ ifvWin"
+                    class="sc-dIvrsQ jikzOz"
                     data-column-id="2"
                   >
                     mac_wifi
                   </div>
                   <span
-                    class="sc-fnVZcZ hAsdXb"
+                    class="sc-fFSPTT eMJmB"
                   >
                     ▲
                   </span>
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-fFSPTT hCPiRP dlLhQd cZNhtN rdt_TableCol"
+                class="sc-kEqXSa sc-iqAclL sc-bkbkJK jbAPGc glyDaK fWvSPD rdt_TableCol"
                 data-column-id="3"
               >
                 <div
-                  class="sc-bkbkJK nDHnj rdt_TableCol_Sortable"
+                  class="sc-iemWCZ ghecnV rdt_TableCol_Sortable"
                   data-column-id="3"
                   data-sort-id="3"
                   role="columnheader"
                   tabindex="0"
                 >
                   <div
-                    class="sc-iemWCZ ifvWin"
+                    class="sc-dIvrsQ jikzOz"
                     data-column-id="3"
                   >
                     sim_id
                   </div>
                   <span
-                    class="sc-fnVZcZ hAsdXb"
+                    class="sc-fFSPTT eMJmB"
                   >
                     ▲
                   </span>
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-fFSPTT hCPiRP dlLhQd cZNhtN rdt_TableCol"
+                class="sc-kEqXSa sc-iqAclL sc-bkbkJK jbAPGc glyDaK fWvSPD rdt_TableCol"
                 data-column-id="4"
               >
                 <div
-                  class="sc-bkbkJK nDHnj rdt_TableCol_Sortable"
+                  class="sc-iemWCZ ghecnV rdt_TableCol_Sortable"
                   data-column-id="4"
                   data-sort-id="4"
                   role="columnheader"
                   tabindex="0"
                 >
                   <div
-                    class="sc-iemWCZ ifvWin"
+                    class="sc-dIvrsQ jikzOz"
                     data-column-id="4"
                   >
                     last_seen_at
                   </div>
                   <span
-                    class="sc-fnVZcZ hAsdXb"
+                    class="sc-fFSPTT eMJmB"
                   >
                     ▲
                   </span>
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-fFSPTT hCPiRP spDng cZNhtN rdt_TableCol"
+                class="sc-kEqXSa sc-iqAclL sc-bkbkJK jbAPGc nNhxz fWvSPD rdt_TableCol"
                 data-column-id="5"
               >
                 <div
-                  class="sc-bkbkJK nDHnj rdt_TableCol_Sortable"
+                  class="sc-iemWCZ ghecnV rdt_TableCol_Sortable"
                   data-column-id="5"
                   data-sort-id="5"
                   role="columnheader"
                   tabindex="0"
                 >
                   <div
-                    class="sc-iemWCZ ifvWin"
+                    class="sc-dIvrsQ jikzOz"
                     data-column-id="5"
                   >
                     connection_type
                   </div>
                   <span
-                    class="sc-fnVZcZ hAsdXb"
+                    class="sc-fFSPTT eMJmB"
                   >
                     ▲
                   </span>
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-fFSPTT hCPiRP spDng cZNhtN rdt_TableCol"
+                class="sc-kEqXSa sc-iqAclL sc-bkbkJK jbAPGc nNhxz fWvSPD rdt_TableCol"
                 data-column-id="6"
               >
                 <div
-                  class="sc-bkbkJK nDHnj rdt_TableCol_Sortable"
+                  class="sc-iemWCZ ghecnV rdt_TableCol_Sortable"
                   data-column-id="6"
                   data-sort-id="6"
                   role="columnheader"
                   tabindex="0"
                 >
                   <div
-                    class="sc-iemWCZ ifvWin"
+                    class="sc-dIvrsQ jikzOz"
                     data-column-id="6"
                   >
                     status
                   </div>
                   <span
-                    class="sc-fnVZcZ hAsdXb"
+                    class="sc-fFSPTT eMJmB"
                   >
                     ▲
                   </span>
@@ -842,16 +840,16 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="sc-lmgQwP kppOq rdt_TableBody"
+            class="sc-iJCRrE kYopA-D rdt_TableBody"
             role="rowgroup"
           >
             <div
-              class="sc-hBMUJo jzmWhL rdt_TableRow"
+              class="sc-fnVZcZ gsroRF rdt_TableRow"
               id="row-0"
               role="row"
             >
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="1"
                 data-tag="allowRowEvents"
                 id="cell-1-undefined"
@@ -860,15 +858,16 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 <div
                   data-tag="allowRowEvents"
                 >
-                  <div
+                  <a
                     class="device_0"
+                    href="/device/0"
                   >
                     device_0
-                  </div>
+                  </a>
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="2"
                 data-tag="allowRowEvents"
                 id="cell-2-undefined"
@@ -881,7 +880,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="3"
                 data-tag="allowRowEvents"
                 id="cell-3-undefined"
@@ -894,7 +893,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="4"
                 data-tag="allowRowEvents"
                 id="cell-4-undefined"
@@ -907,7 +906,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi spDng eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx nNhxz cosKHq rdt_TableCell"
                 data-column-id="5"
                 data-tag="allowRowEvents"
                 id="cell-5-undefined"
@@ -917,7 +916,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                   data-tag="allowRowEvents"
                 >
                   <div
-                    class="sc-jSFjdj gpMpen"
+                    class="sc-gKAaRy cLiRIz"
                     data-testid="connection_type-container"
                     type="ethernet"
                   >
@@ -937,7 +936,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi spDng eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx nNhxz cosKHq rdt_TableCell"
                 data-column-id="6"
                 data-tag="allowRowEvents"
                 id="cell-6-undefined"
@@ -947,7 +946,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                   data-tag="allowRowEvents"
                 >
                   <div
-                    class="sc-gKAaRy cMtfuc"
+                    class="sc-iCoGMd eHEZMM"
                     data-testid="status-container"
                     status="connected"
                   >
@@ -968,12 +967,12 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
               </div>
             </div>
             <div
-              class="sc-hBMUJo jzmWhL rdt_TableRow"
+              class="sc-fnVZcZ gsroRF rdt_TableRow"
               id="row-1"
               role="row"
             >
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="1"
                 data-tag="allowRowEvents"
                 id="cell-1-undefined"
@@ -982,15 +981,16 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 <div
                   data-tag="allowRowEvents"
                 >
-                  <div
+                  <a
                     class="device_1"
+                    href="/device/1"
                   >
                     device_1
-                  </div>
+                  </a>
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="2"
                 data-tag="allowRowEvents"
                 id="cell-2-undefined"
@@ -1003,7 +1003,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="3"
                 data-tag="allowRowEvents"
                 id="cell-3-undefined"
@@ -1016,7 +1016,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="4"
                 data-tag="allowRowEvents"
                 id="cell-4-undefined"
@@ -1029,7 +1029,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi spDng eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx nNhxz cosKHq rdt_TableCell"
                 data-column-id="5"
                 data-tag="allowRowEvents"
                 id="cell-5-undefined"
@@ -1039,7 +1039,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                   data-tag="allowRowEvents"
                 >
                   <div
-                    class="sc-jSFjdj iuSQRW"
+                    class="sc-gKAaRy bShkyW"
                     data-testid="connection_type-container"
                     type="wifi"
                   >
@@ -1059,7 +1059,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi spDng eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx nNhxz cosKHq rdt_TableCell"
                 data-column-id="6"
                 data-tag="allowRowEvents"
                 id="cell-6-undefined"
@@ -1069,7 +1069,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                   data-tag="allowRowEvents"
                 >
                   <div
-                    class="sc-gKAaRy fwUWMS"
+                    class="sc-iCoGMd hvsoca"
                     data-testid="status-container"
                     status="disconnected"
                   >
@@ -1090,12 +1090,12 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
               </div>
             </div>
             <div
-              class="sc-hBMUJo jzmWhL rdt_TableRow"
+              class="sc-fnVZcZ gsroRF rdt_TableRow"
               id="row-2"
               role="row"
             >
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="1"
                 data-tag="allowRowEvents"
                 id="cell-1-undefined"
@@ -1104,15 +1104,16 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 <div
                   data-tag="allowRowEvents"
                 >
-                  <div
+                  <a
                     class="device_2"
+                    href="/device/2"
                   >
                     device_2
-                  </div>
+                  </a>
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="2"
                 data-tag="allowRowEvents"
                 id="cell-2-undefined"
@@ -1125,7 +1126,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="3"
                 data-tag="allowRowEvents"
                 id="cell-3-undefined"
@@ -1138,7 +1139,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi dlLhQd eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx glyDaK cosKHq rdt_TableCell"
                 data-column-id="4"
                 data-tag="allowRowEvents"
                 id="cell-4-undefined"
@@ -1151,7 +1152,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi spDng eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx nNhxz cosKHq rdt_TableCell"
                 data-column-id="5"
                 data-tag="allowRowEvents"
                 id="cell-5-undefined"
@@ -1161,7 +1162,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                   data-tag="allowRowEvents"
                 >
                   <div
-                    class="sc-jSFjdj cBHKtd"
+                    class="sc-gKAaRy ftewcB"
                     data-testid="connection_type-container"
                     type="cellular"
                   >
@@ -1181,7 +1182,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="sc-jrsJWt sc-kEqXSa sc-iqAclL eAcHFi spDng eZwRKE rdt_TableCell"
+                class="sc-kEqXSa sc-iqAclL sc-crzoAE dpHudx nNhxz cosKHq rdt_TableCell"
                 data-column-id="6"
                 data-tag="allowRowEvents"
                 id="cell-6-undefined"
@@ -1191,7 +1192,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                   data-tag="allowRowEvents"
                 >
                   <div
-                    class="sc-gKAaRy cMtfuc"
+                    class="sc-iCoGMd eHEZMM"
                     data-testid="status-container"
                     status="connected"
                   >
