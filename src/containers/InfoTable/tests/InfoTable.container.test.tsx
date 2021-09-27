@@ -5,6 +5,7 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import InfoTable from 'containers/InfoTable'
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { InfoTableable } from 'types/infoTable'
 
 describe('InfoTable', () => {
@@ -35,52 +36,88 @@ describe('InfoTable', () => {
     },
   ]
   it('should match snapshot', () => {
-    const { container } = render(<InfoTable devicesInfo={devicesInfo} />)
+    const { container } = render(
+      <Router>
+        <InfoTable devicesInfo={devicesInfo} />
+      </Router>,
+    )
     expect(container.firstChild).toMatchSnapshot()
   })
   it('should display as many status-container as there are devices', () => {
-    render(<InfoTable devicesInfo={devicesInfo} />)
+    render(
+      <Router>
+        <InfoTable devicesInfo={devicesInfo} />
+      </Router>,
+    )
     expect(screen.getAllByTestId('status-container')).toHaveLength(devicesInfo.length)
   })
   it('should sort by serial_number in asc order when header "serial_number" is clicked', () => {
-    render(<InfoTable devicesInfo={devicesInfo} />)
+    render(
+      <Router>
+        <InfoTable devicesInfo={devicesInfo} />
+      </Router>,
+    )
     const nameHeader = screen.getAllByRole('columnheader')[0]
     userEvent.click(nameHeader)
     expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_0')
   })
   it('should sort by serial_number in desc order when header "serial_number" is clicked twice', () => {
-    render(<InfoTable devicesInfo={devicesInfo} />)
+    render(
+      <Router>
+        <InfoTable devicesInfo={devicesInfo} />
+      </Router>,
+    )
     const nameHeader = screen.getAllByRole('columnheader')[0]
     userEvent.click(nameHeader)
     userEvent.click(nameHeader)
     expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_2')
   })
   it('should sort by mac_wifi (alphanumeric) when header "mac_wifi" is clicked', () => {
-    render(<InfoTable devicesInfo={devicesInfo} />)
+    render(
+      <Router>
+        <InfoTable devicesInfo={devicesInfo} />
+      </Router>,
+    )
     const nameHeader = screen.getAllByRole('columnheader')[1]
     userEvent.click(nameHeader)
     expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_2')
   })
   it('should sort by sim_id (alphanumeric) when header "sim_id" is clicked', () => {
-    render(<InfoTable devicesInfo={devicesInfo} />)
+    render(
+      <Router>
+        <InfoTable devicesInfo={devicesInfo} />
+      </Router>,
+    )
     const nameHeader = screen.getAllByRole('columnheader')[2]
     userEvent.click(nameHeader)
     expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_2')
   })
   it('should sort by last_seen_at (by date) when header "last_seen_at" is clicked', () => {
-    render(<InfoTable devicesInfo={devicesInfo} />)
+    render(
+      <Router>
+        <InfoTable devicesInfo={devicesInfo} />
+      </Router>,
+    )
     const nameHeader = screen.getAllByRole('columnheader')[3]
     userEvent.click(nameHeader)
     expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_0')
   })
   it('should sort by connection_type when header "connection_type" is clicked', () => {
-    render(<InfoTable devicesInfo={devicesInfo} />)
+    render(
+      <Router>
+        <InfoTable devicesInfo={devicesInfo} />
+      </Router>,
+    )
     const nameHeader = screen.getAllByRole('columnheader')[4]
     userEvent.click(nameHeader)
     expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_0')
   })
   it('should sort by status "connected" when header "status" is clicked', () => {
-    render(<InfoTable devicesInfo={devicesInfo} />)
+    render(
+      <Router>
+        <InfoTable devicesInfo={devicesInfo} />
+      </Router>,
+    )
     const nameHeader = screen.getAllByRole('columnheader')[5]
     userEvent.click(nameHeader)
     expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_0') // device 0 is the first device to be connected so it should appear first

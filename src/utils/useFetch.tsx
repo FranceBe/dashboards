@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 
 const cache: Record<string, any> = {}
 
-export const useFetch = <T,>(url: string): { data: T[]; status: string } => {
+export const useFetch = <T,>(url: string): { data: T | T[] | undefined; status: string } => {
   const [status, setStatus] = useState('idle')
-  const [data, setData] = useState([])
+  const [data, setData] = useState()
 
   useEffect(() => {
     let shouldUpdateState = true
@@ -19,8 +19,8 @@ export const useFetch = <T,>(url: string): { data: T[]; status: string } => {
         .then((res) => res.json())
         .then((data) => {
           if (shouldUpdateState) {
-            cache[url] = data.results
-            setData(data.results)
+            cache[url] = data.results ? data.results : data
+            setData(data.results ? data.results : data)
           }
         })
         .catch((err) => {

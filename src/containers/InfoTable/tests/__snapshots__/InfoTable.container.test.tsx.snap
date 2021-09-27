@@ -488,11 +488,12 @@ exports[`InfoTable should match snapshot 1`] = `
             <div
               data-tag="allowRowEvents"
             >
-              <div
+              <a
                 class="device_0"
+                href="/device/0"
               >
                 device_0
-              </div>
+              </a>
             </div>
           </div>
           <div
@@ -610,11 +611,12 @@ exports[`InfoTable should match snapshot 1`] = `
             <div
               data-tag="allowRowEvents"
             >
-              <div
+              <a
                 class="device_1"
+                href="/device/1"
               >
                 device_1
-              </div>
+              </a>
             </div>
           </div>
           <div
@@ -732,11 +734,12 @@ exports[`InfoTable should match snapshot 1`] = `
             <div
               data-tag="allowRowEvents"
             >
-              <div
+              <a
                 class="device_2"
+                href="/device/2"
               >
                 device_2
-              </div>
+              </a>
             </div>
           </div>
           <div

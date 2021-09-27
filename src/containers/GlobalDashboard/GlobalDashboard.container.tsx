@@ -1,3 +1,4 @@
+import Loading from 'components/Loading'
 import ConnectionTypeStat from 'containers/ConnectionTypeStat'
 import {
   ChartsContainer,
@@ -17,16 +18,25 @@ import { useFetch } from 'utils/useFetch'
 
 export const GlobalDashboard: React.FC = () => {
   const { data } = useFetch<DashboardDeviceable>('/api/devices')
-
+  let devicesData
+  if (data && Array.isArray(data) && data.length) {
+    devicesData = data
+  }
   return (
     <Dashboard>
-      <ChartsContainer>
-        <VoltageStats devicesVoltage={getVoltageStats(data)} />
-        <ConnectionTypeStat devicesConnectionType={getConnectionTypeData(data)} />
-      </ChartsContainer>
-      <InfoTableContainer>
-        <InfoTable devicesInfo={getInfoTableData(data)} />
-      </InfoTableContainer>
+      {devicesData ? (
+        <>
+          <ChartsContainer>
+            <VoltageStats devicesVoltage={getVoltageStats(devicesData)} />
+            <ConnectionTypeStat devicesConnectionType={getConnectionTypeData(devicesData)} />
+          </ChartsContainer>
+          <InfoTableContainer>
+            <InfoTable devicesInfo={getInfoTableData(devicesData)} />
+          </InfoTableContainer>
+        </>
+      ) : (
+        <Loading />
+      )}
     </Dashboard>
   )
 }

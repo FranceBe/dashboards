@@ -3,12 +3,20 @@ import { Status } from 'components/Status/Status.component'
 import moment from 'moment'
 import React from 'react'
 import { TableColumn } from 'react-data-table-component'
+import { Link } from 'react-router-dom'
 import { InfoTableable } from 'types/infoTable'
 
 export const columns: TableColumn<InfoTableable>[] = [
   {
     name: 'serial_number',
-    selector: (row: InfoTableable) => <div className={row.name}>{row.name}</div>,
+    selector: (row: InfoTableable) => {
+      const urlId = Number(row.name.replace('device_', ''))
+      return (
+        <Link to={`/device/${urlId}`} className={row.name}>
+          {row.name}
+        </Link>
+      )
+    },
     sortFunction: (rowA, rowB) =>
       rowA.name.toLowerCase().localeCompare(rowB.name.toLowerCase(), undefined, {
         numeric: true,
