@@ -54,7 +54,7 @@ exports[`ChartPie should match snapshot 1`] = `
       <div
         class="sc-gtsrHT dZVimF"
       >
-        ethernet
+        0
         : 
         0
       </div>

@@ -1,8 +1,8 @@
-export type VoltageStat = {
+export type VoltageStatable = {
   name: string
   voltage: number
 }
 
 export type VoltageStatsProps = {
-  devicesVoltage: VoltageStat[]
+  devicesVoltage: VoltageStatable[]
 }

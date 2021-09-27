@@ -560,7 +560,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
           </svg>
           <div
             class="recharts-legend-wrapper"
-            style="position: absolute; width: 490px; height: 320px; left: 5px; bottom: 5px;"
+            style="position: absolute; width: 490px; height: auto; left: 5px; top: 5px;"
           >
             <ul
               class="recharts-default-legend"

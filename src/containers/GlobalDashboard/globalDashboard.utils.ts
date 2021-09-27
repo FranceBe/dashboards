@@ -1,7 +1,7 @@
 import { ConnectionTypeDataable } from 'types/connectionType'
 import { DashboardDeviceable } from 'types/dashboardDevice'
 import { InfoTableable } from 'types/infoTable'
-import { VoltageStat } from 'types/voltageStats'
+import { VoltageStatable } from 'types/voltageStats'
 
 export const getInfoTableData = (devices: DashboardDeviceable[]): InfoTableable[] =>
   devices.map((device: DashboardDeviceable) => ({
@@ -13,7 +13,7 @@ export const getInfoTableData = (devices: DashboardDeviceable[]): InfoTableable[
     status: device.status,
   }))
 
-export const getVoltageStats = (devices: DashboardDeviceable[]): VoltageStat[] =>
+export const getVoltageStats = (devices: DashboardDeviceable[]): VoltageStatable[] =>
   devices.map((device: DashboardDeviceable) => ({
     name: device.serial_number,
     voltage: device.voltage,
