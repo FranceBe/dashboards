@@ -8,6 +8,7 @@ import { InfoTableable } from 'types/infoTable'
 
 export const columns: TableColumn<InfoTableable>[] = [
   {
+    grow: 1,
     name: 'serial_number',
     selector: (row: InfoTableable) => {
       const urlId = Number(row.name.replace('device_', ''))
@@ -47,7 +48,7 @@ export const columns: TableColumn<InfoTableable>[] = [
     sortable: true,
   },
   {
-    grow: 0,
+    grow: 0.5,
     name: 'connection_type',
     selector: (row: InfoTableable) => <ConnectionType connection_type={row.connection_type} />,
     sortFunction: (rowA, rowB) => rowA.name.toLowerCase().localeCompare(rowB.name.toLowerCase()),
@@ -62,3 +63,7 @@ export const columns: TableColumn<InfoTableable>[] = [
     sortable: true,
   },
 ]
+
+export const paginationOptions = {
+  rowsPerPageText: '',
+}

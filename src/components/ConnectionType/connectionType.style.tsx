@@ -1,19 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
-import { fontSizes, palette, spaces } from 'styles/variables'
+import { elements, fontSizes, palette, spaces } from 'styles/variables'
 
 export const ConnectionTypeContainer = styled((props) => <div {...props} />)<{
   type: 'ethernet' | 'wifi' | 'cellular'
 }>`
   background-color: ${(props) => {
     if (props.type === 'wifi') {
-      return palette.purple_primary
+      return palette.purple_secondary
     } else if (props.type === 'ethernet') {
-      return palette.pink_primary
+      return palette.blue_primary
     } else {
-      return palette.yellow_light
+      return palette.green_secondary
     }
   }};
+  svg {
+    fill: ${palette.white};
+  }
+  box-shadow: ${elements.box_shadow};
   width: fit-content;
   border-radius: ${spaces.small};
   padding: ${spaces.regular};

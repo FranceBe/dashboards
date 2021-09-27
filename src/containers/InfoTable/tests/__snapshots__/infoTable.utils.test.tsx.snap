@@ -3,6 +3,7 @@
 exports[`InfoTable Utils columns should match snapshot 1`] = `
 Array [
   Object {
+    "grow": 1,
     "name": "serial_number",
     "selector": [Function],
     "sortFunction": [Function],
@@ -25,7 +26,7 @@ Array [
     "sortable": true,
   },
   Object {
-    "grow": 0,
+    "grow": 0.5,
     "name": "connection_type",
     "selector": [Function],
     "sortFunction": [Function],

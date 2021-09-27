@@ -5,7 +5,7 @@ import { InfoTableable, InfoTableProps } from 'types/infoTable'
 
 export default {
   component: InfoTable,
-  title: 'Components/StatusTable',
+  title: 'Components/InfoTable',
 } as Meta
 
 const devicesStatus: InfoTableable[] = [

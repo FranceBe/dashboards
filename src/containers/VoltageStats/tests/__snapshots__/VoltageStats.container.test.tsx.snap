@@ -1,7 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VoltageStats should match snapshot 1`] = `
-<div>
+<div
+  class="sc-bdnxRM bsccyY"
+>
+  <h2>
+    Voltage per device
+  </h2>
   <div
     data-testid="chart-bar"
   >

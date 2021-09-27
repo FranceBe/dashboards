@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { fontSizes, palette, spaces } from 'styles/variables'
+import { elements, fontSizes, palette, spaces } from 'styles/variables'
 
 export const StatusContainer = styled((props) => <div {...props} />)<{
   status: 'connected' | 'disconnected'
@@ -11,4 +11,5 @@ export const StatusContainer = styled((props) => <div {...props} />)<{
   border-radius: ${spaces.small};
   padding: ${spaces.regular};
   font-size: ${fontSizes.small};
+  box-shadow: ${elements.box_shadow};
 `
