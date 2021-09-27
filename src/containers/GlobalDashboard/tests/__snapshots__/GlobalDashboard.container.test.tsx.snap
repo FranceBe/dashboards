@@ -926,6 +926,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                       class="MuiSvgIcon-root"
                       data-testid="icon-ethernet"
                       focusable="false"
+                      title="ethernet"
                       viewBox="0 0 24 24"
                     >
                       <path
@@ -955,6 +956,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                       class="MuiSvgIcon-root"
                       data-testid="signal-on"
                       focusable="false"
+                      title="connected"
                       viewBox="0 0 24 24"
                     >
                       <path
@@ -1046,6 +1048,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                       class="MuiSvgIcon-root"
                       data-testid="icon-wifi"
                       focusable="false"
+                      title="wifi"
                       viewBox="0 0 24 24"
                     >
                       <path
@@ -1075,6 +1078,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                       class="MuiSvgIcon-root"
                       data-testid="signal-off"
                       focusable="false"
+                      title="disconnected"
                       viewBox="0 0 24 24"
                     >
                       <path
@@ -1166,6 +1170,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                       class="MuiSvgIcon-root"
                       data-testid="icon-cellular"
                       focusable="false"
+                      title="cellular"
                       viewBox="0 0 24 24"
                     >
                       <path
@@ -1195,6 +1200,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                       class="MuiSvgIcon-root"
                       data-testid="signal-on"
                       focusable="false"
+                      title="connected"
                       viewBox="0 0 24 24"
                     >
                       <path

@@ -21,6 +21,7 @@ exports[`Status Given status is "connected" should match snapshot 1`] = `
     class="MuiSvgIcon-root"
     data-testid="signal-on"
     focusable="false"
+    title="connected"
     viewBox="0 0 24 24"
   >
     <path
@@ -51,6 +52,7 @@ exports[`Status Given status is "disconnected" should match snapshot 1`] = `
     class="MuiSvgIcon-root"
     data-testid="signal-off"
     focusable="false"
+    title="disconnected"
     viewBox="0 0 24 24"
   >
     <path

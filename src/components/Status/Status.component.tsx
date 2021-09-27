@@ -1,3 +1,4 @@
+import Tooltip from '@material-ui/core/Tooltip'
 import SignalCellular4BarIcon from '@material-ui/icons/SignalCellular4Bar'
 import SignalCellularOffIcon from '@material-ui/icons/SignalCellularOff'
 import { StatusContainer } from 'components/Status/status.style'
@@ -14,7 +15,7 @@ export const Status: React.FC<StatusProps> = ({ status }) => {
 
   return (
     <StatusContainer data-testid={'status-container'} status={status}>
-      {statusIcon}
+      <Tooltip title={status}>{statusIcon}</Tooltip>
     </StatusContainer>
   )
 }
