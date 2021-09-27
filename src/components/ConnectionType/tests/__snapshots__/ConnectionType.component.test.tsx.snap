@@ -21,6 +21,7 @@ exports[`ConnectionType Given connection_type is "cellular" should match snapsho
     class="MuiSvgIcon-root"
     data-testid="icon-cellular"
     focusable="false"
+    title="cellular"
     viewBox="0 0 24 24"
   >
     <path
@@ -51,6 +52,7 @@ exports[`ConnectionType Given connection_type is "ethernet" should match snapsho
     class="MuiSvgIcon-root"
     data-testid="icon-ethernet"
     focusable="false"
+    title="ethernet"
     viewBox="0 0 24 24"
   >
     <path
@@ -81,6 +83,7 @@ exports[`ConnectionType Given connection_type is "wifi" should match snapshot 1`
     class="MuiSvgIcon-root"
     data-testid="icon-wifi"
     focusable="false"
+    title="wifi"
     viewBox="0 0 24 24"
   >
     <path

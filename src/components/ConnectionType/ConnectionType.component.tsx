@@ -1,3 +1,4 @@
+import Tooltip from '@material-ui/core/Tooltip'
 import SettingsEthernetIcon from '@material-ui/icons/SettingsEthernet'
 import SignalCellularAltIcon from '@material-ui/icons/SignalCellularAlt'
 import WifiIcon from '@material-ui/icons/Wifi'
@@ -14,7 +15,7 @@ export const ConnectionType: React.FC<ConnectionTypeProps> = ({ connection_type 
 
   return (
     <ConnectionTypeContainer data-testid={'connection_type-container'} type={connection_type}>
-      {iconByType[connection_type]}
+      <Tooltip title={connection_type}>{iconByType[connection_type]}</Tooltip>
     </ConnectionTypeContainer>
   )
 }
