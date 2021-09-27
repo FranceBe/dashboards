@@ -2,7 +2,7 @@ import App from 'containers/App'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Favicon from 'react-favicon'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 import { GlobalStyle } from 'styles/global-styles'
 
 const MainApp = () => (

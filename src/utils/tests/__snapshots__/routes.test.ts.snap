@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes should match snapshot 1`] = `
+Array [
+  Object {
+    "component": [Function],
+    "exact": true,
+    "path": "/",
+  },
+  Object {
+    "component": [Function],
+    "exact": true,
+    "path": "/device/:id",
+  },
+]
+`;

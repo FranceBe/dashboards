@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom/extend-expect'
 
 import { render, screen } from '@testing-library/react'
-import ConnectionType from 'containers/ConnectionType'
+import ConnectionType from 'containers/ConnectionTypeStat'
 import React from 'react'
 import { ConnectionTypeDataable } from 'types/connectionType'
 
