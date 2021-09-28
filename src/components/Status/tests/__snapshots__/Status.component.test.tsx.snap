@@ -13,7 +13,7 @@ exports[`Status Given status is "connected" should match snapshot 1`] = `
 }
 
 <div
-  class="c0"
+  class="c0 status-container"
   data-testid="status-container"
   status="connected"
 >
@@ -45,7 +45,7 @@ exports[`Status Given status is "disconnected" should match snapshot 1`] = `
 }
 
 <div
-  class="c0"
+  class="c0 status-container"
   data-testid="status-container"
   status="disconnected"
 >
