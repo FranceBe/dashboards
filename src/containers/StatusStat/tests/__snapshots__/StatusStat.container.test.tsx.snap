@@ -12,10 +12,10 @@ exports[`StatusStat should match snapshot 1`] = `
     class="sc-hKFxyN hkEvbo"
   >
     <div
-      class="sc-eCApnc djGehg"
+      class="sc-eCApnc jTCpRP"
     >
       <div
-        class="sc-jSFjdj edKxXR"
+        class="sc-jSFjdj gKHwZP"
       >
         <div
           class="sc-gtsrHT jXWUFn"
@@ -58,10 +58,10 @@ exports[`StatusStat should match snapshot 1`] = `
       class="sc-gKAaRy biKmfY"
     />
     <div
-      class="sc-eCApnc djGehg"
+      class="sc-eCApnc jTCpRP"
     >
       <div
-        class="sc-jSFjdj edKxXR disconnected-ratio"
+        class="sc-jSFjdj gKHwZP"
       >
         <div
           class="sc-gtsrHT eAlTkD"

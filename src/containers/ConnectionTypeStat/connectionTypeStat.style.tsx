@@ -7,7 +7,10 @@ export const ConnectionTypeStatContainer = styled.div`
   padding-left: 20px;
   border-radius: ${spaces.small};
   box-shadow: ${elements.box_shadow};
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   h2 {
     text-align: center;
   }

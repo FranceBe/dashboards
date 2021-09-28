@@ -32,7 +32,7 @@ export const StatusStat: React.FC<{ connectedLength: number; disconnectedLength:
         </ColumnContainer>
         <Separator />
         <ColumnContainer>
-          <LineContainer className={'disconnected-ratio'}>
+          <LineContainer>
             <Status status={'disconnected'} /> <Label>Disconnected</Label>
           </LineContainer>
           <CircleContainer>

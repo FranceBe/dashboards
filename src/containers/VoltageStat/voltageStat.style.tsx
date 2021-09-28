@@ -6,7 +6,10 @@ export const VoltageStatContainer = styled.div`
   padding-right: 20px;
   border-radius: ${spaces.small};
   box-shadow: ${elements.box_shadow};
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h2 {
     text-align: center;
   }
