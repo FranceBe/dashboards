@@ -9,7 +9,7 @@ exports[`DeviceCard should match snapshot 1`] = `
   width: fit-content;
   border-radius: 4px;
   padding: 8px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .c5 svg {
@@ -85,7 +85,7 @@ exports[`DeviceCard should match snapshot 1`] = `
   width: fit-content;
   border-radius: 4px;
   padding: 8px;
-  font-size: 12px;
+  font-size: 0.75rem;
   box-shadow: 0 5px 25px 0 rgba(0,0,45,0.1),0 2px 6px 0 rgba(0,0,0,0.04), 0 16px 24px 0 rgba(0,0,46,0.06);
 }
 

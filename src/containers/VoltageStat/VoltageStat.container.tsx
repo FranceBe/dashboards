@@ -1,8 +1,8 @@
 import ChartBar from 'components/ChartBar'
-import { VoltageStatContainer } from 'containers/VoltageStats/voltageStats.style'
+import { VoltageStatContainer } from 'containers/VoltageStat/voltageStat.style'
 import React from 'react'
-import { VoltageStatsProps } from 'types/voltageStats'
-export const VoltageStats: React.FC<VoltageStatsProps> = ({ devicesVoltage }) => {
+import { VoltageStatProps } from 'types/voltageStat'
+export const VoltageStat: React.FC<VoltageStatProps> = ({ devicesVoltage }) => {
   return (
     <VoltageStatContainer>
       <h2>Voltage per device</h2>
@@ -11,4 +11,4 @@ export const VoltageStats: React.FC<VoltageStatsProps> = ({ devicesVoltage }) =>
   )
 }
 
-export default VoltageStats
+export default VoltageStat

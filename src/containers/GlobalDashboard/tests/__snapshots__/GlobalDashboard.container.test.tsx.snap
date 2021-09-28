@@ -8,10 +8,10 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
     Global Dashboard
   </h1>
   <div
-    class="sc-gKAaRy hUtEtC"
+    class="sc-gKAaRy HERac"
   >
     <div
-      class="sc-cTJkRt bQkllH"
+      class="sc-jgPyTC fowKOU"
     >
       <h2>
         Voltage per device
@@ -686,6 +686,107 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
         </div>
       </div>
     </div>
+    <div
+      class="sc-jNnpgg dyHDgn"
+      data-testid="status-stat"
+    >
+      <h2>
+        Status Ratio
+      </h2>
+      <div
+        class="sc-dPaNzc fsnMSQ"
+      >
+        <div
+          class="sc-bBjRSN ifWgyn"
+        >
+          <div
+            class="sc-cOifOu dtLyyn"
+          >
+            <div
+              class="sc-pNWdM kYEyMF"
+              data-testid="status-container"
+              status="connected"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                data-testid="signal-on"
+                focusable="false"
+                title="connected"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M2 22h20V2z"
+                />
+              </svg>
+            </div>
+             
+            <div
+              class="sc-khIgEk gsBmqh"
+            >
+              Connected
+            </div>
+          </div>
+          <div
+            class="sc-hTRkXV iDkRUK"
+          >
+            <div
+              class="sc-cTJkRt fDqRzl"
+              color="#00C9A3"
+              data-testid="ratio-circle"
+            >
+              2 / 3
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-Arkif eFGdmg"
+        />
+        <div
+          class="sc-bBjRSN ifWgyn"
+        >
+          <div
+            class="sc-cOifOu dtLyyn disconnected-ratio"
+          >
+            <div
+              class="sc-pNWdM fPSUZF"
+              data-testid="status-container"
+              status="disconnected"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                data-testid="signal-off"
+                focusable="false"
+                title="disconnected"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21 1l-8.59 8.59L21 18.18V1zM4.77 4.5L3.5 5.77l6.36 6.36L1 21h17.73l2 2L22 21.73 4.77 4.5z"
+                />
+              </svg>
+            </div>
+             
+            <div
+              class="sc-khIgEk gsBmqh"
+            >
+              Disconnected
+            </div>
+          </div>
+          <div
+            class="sc-hTRkXV iDkRUK"
+          >
+            <div
+              class="sc-cTJkRt jTHRCJ"
+              color="#eb4034"
+              data-testid="ratio-circle"
+            >
+              1 / 3
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div
     class="sc-jSFjdj cMHfVW"
@@ -934,7 +1035,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                     data-tag="allowRowEvents"
                   >
                     <div
-                      class="sc-fujyAs kCnSK"
+                      class="sc-fujyAs ejkVrf"
                       data-testid="connection_type-container"
                       type="ethernet"
                     >
@@ -964,7 +1065,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                     data-tag="allowRowEvents"
                   >
                     <div
-                      class="sc-pNWdM hvRxXw"
+                      class="sc-pNWdM kYEyMF"
                       data-testid="status-container"
                       status="connected"
                     >
@@ -1057,7 +1158,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                     data-tag="allowRowEvents"
                   >
                     <div
-                      class="sc-fujyAs dbTiVN"
+                      class="sc-fujyAs dA-DhUw"
                       data-testid="connection_type-container"
                       type="wifi"
                     >
@@ -1087,7 +1188,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                     data-tag="allowRowEvents"
                   >
                     <div
-                      class="sc-pNWdM gsLOyw"
+                      class="sc-pNWdM fPSUZF"
                       data-testid="status-container"
                       status="disconnected"
                     >
@@ -1180,7 +1281,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                     data-tag="allowRowEvents"
                   >
                     <div
-                      class="sc-fujyAs gpQwXp"
+                      class="sc-fujyAs cMwdeo"
                       data-testid="connection_type-container"
                       type="cellular"
                     >
@@ -1210,7 +1311,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                     data-tag="allowRowEvents"
                   >
                     <div
-                      class="sc-pNWdM hvRxXw"
+                      class="sc-pNWdM kYEyMF"
                       data-testid="status-container"
                       status="connected"
                     >
