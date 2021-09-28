@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RatioCircle should match snapshot 1`] = `
+.c0 {
+  height: 150px;
+  width: 150px;
+  border: 3px solid #343536;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  place-self: center;
+  box-shadow: 0 5px 25px 0 rgba(0,0,45,0.1),0 2px 6px 0 rgba(0,0,0,0.04), 0 16px 24px 0 rgba(0,0,46,0.06);
+  font-size: 24px;
+}
+
+<div
+  class="c0"
+>
+  14/23
+</div>
+`;
