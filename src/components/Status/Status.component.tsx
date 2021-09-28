@@ -14,7 +14,11 @@ export const Status: React.FC<StatusProps> = ({ status }) => {
     )
 
   return (
-    <StatusContainer data-testid={'status-container'} status={status}>
+    <StatusContainer
+      data-testid={'status-container'}
+      className={'status-container'}
+      status={status}
+    >
       <Tooltip title={status}>{statusIcon}</Tooltip>
     </StatusContainer>
   )

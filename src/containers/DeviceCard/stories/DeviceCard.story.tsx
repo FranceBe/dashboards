@@ -1,11 +1,11 @@
 import { Meta } from '@storybook/react/types-6-0'
-import DeviceCard from 'components/DeviceCard'
+import DeviceCard from 'containers/DeviceCard/index'
 import React from 'react'
 import { DashboardDeviceable } from 'types/dashboardDevice'
 
 export default {
   component: DeviceCard,
-  title: 'Components/DeviceCard',
+  title: 'Containers/DeviceCard',
 } as Meta
 
 const device: DashboardDeviceable = {

@@ -1,6 +1,6 @@
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
-import DeviceCard from 'components/DeviceCard'
 import Loading from 'components/Loading'
+import DeviceCard from 'containers/DeviceCard'
 import {
   CardContainer,
   LinkContainer,

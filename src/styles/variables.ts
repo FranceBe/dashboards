@@ -2,6 +2,7 @@
 export const palette: { [key: string]: string } = {
   blue_light: '#DCEEF4',
   blue_primary: '#0E074B',
+  blue_secondary: '#0061A9',
   green_primary: '#00C9A3',
   green_secondary: '#003725',
   grey_primary: '#343536',
@@ -21,6 +22,7 @@ export const spaces: { [key: string]: string } = {
   medium: '16px',
   regular: '8px',
   small: '4px',
+  x_large: '32px',
 }
 
 // Font sizes to use in project

@@ -703,7 +703,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
             class="sc-cOifOu ijLfvZ"
           >
             <div
-              class="sc-pNWdM kYEyMF"
+              class="sc-pNWdM kYEyMF status-container"
               data-testid="status-container"
               status="connected"
             >
@@ -749,7 +749,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
             class="sc-cOifOu ijLfvZ"
           >
             <div
-              class="sc-pNWdM fPSUZF"
+              class="sc-pNWdM fPSUZF status-container"
               data-testid="status-container"
               status="disconnected"
             >
@@ -1065,7 +1065,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                     data-tag="allowRowEvents"
                   >
                     <div
-                      class="sc-pNWdM kYEyMF"
+                      class="sc-pNWdM kYEyMF status-container"
                       data-testid="status-container"
                       status="connected"
                     >
@@ -1188,7 +1188,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                     data-tag="allowRowEvents"
                   >
                     <div
-                      class="sc-pNWdM fPSUZF"
+                      class="sc-pNWdM fPSUZF status-container"
                       data-testid="status-container"
                       status="disconnected"
                     >
@@ -1311,7 +1311,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
                     data-tag="allowRowEvents"
                   >
                     <div
-                      class="sc-pNWdM kYEyMF"
+                      class="sc-pNWdM kYEyMF status-container"
                       data-testid="status-container"
                       status="connected"
                     >

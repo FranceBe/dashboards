@@ -18,7 +18,7 @@ exports[`StatusStat should match snapshot 1`] = `
         class="sc-jSFjdj gKHwZP"
       >
         <div
-          class="sc-gtsrHT jXWUFn"
+          class="sc-gtsrHT jXWUFn status-container"
           data-testid="status-container"
           status="connected"
         >
@@ -64,7 +64,7 @@ exports[`StatusStat should match snapshot 1`] = `
         class="sc-jSFjdj gKHwZP"
       >
         <div
-          class="sc-gtsrHT eAlTkD"
+          class="sc-gtsrHT eAlTkD status-container"
           data-testid="status-container"
           status="disconnected"
         >

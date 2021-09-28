@@ -789,7 +789,7 @@ exports[`InfoTable should match snapshot 1`] = `
                 data-tag="allowRowEvents"
               >
                 <div
-                  class="c18"
+                  class="c18 status-container"
                   data-testid="status-container"
                   status="connected"
                 >
@@ -912,7 +912,7 @@ exports[`InfoTable should match snapshot 1`] = `
                 data-tag="allowRowEvents"
               >
                 <div
-                  class="c20"
+                  class="c20 status-container"
                   data-testid="status-container"
                   status="disconnected"
                 >
@@ -1035,7 +1035,7 @@ exports[`InfoTable should match snapshot 1`] = `
                 data-tag="allowRowEvents"
               >
                 <div
-                  class="c20"
+                  class="c20 status-container"
                   data-testid="status-container"
                   status="disconnected"
                 >

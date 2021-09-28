@@ -9,8 +9,11 @@ export const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
-    :active {
+    :active, :visited {
       color: ${palette.blue_primary};
+    }
+    :hover, :visited:hover {
+      color: ${palette.blue_secondary};
     }
   }
 `
