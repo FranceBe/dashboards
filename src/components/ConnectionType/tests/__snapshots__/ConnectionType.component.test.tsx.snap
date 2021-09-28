@@ -9,7 +9,7 @@ exports[`ConnectionType Given connection_type is "cellular" should match snapsho
   width: fit-content;
   border-radius: 4px;
   padding: 8px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .c0 svg {
@@ -45,7 +45,7 @@ exports[`ConnectionType Given connection_type is "ethernet" should match snapsho
   width: fit-content;
   border-radius: 4px;
   padding: 8px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .c0 svg {
@@ -81,7 +81,7 @@ exports[`ConnectionType Given connection_type is "wifi" should match snapshot 1`
   width: fit-content;
   border-radius: 4px;
   padding: 8px;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .c0 svg {

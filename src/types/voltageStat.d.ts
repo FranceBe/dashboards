@@ -3,6 +3,6 @@ export type VoltageStatable = {
   voltage: number
 }
 
-export type VoltageStatsProps = {
+export type VoltageStatProps = {
   devicesVoltage: VoltageStatable[]
 }

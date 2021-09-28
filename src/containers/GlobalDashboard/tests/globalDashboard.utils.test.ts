@@ -1,12 +1,13 @@
 import {
   getConnectionTypeData,
   getInfoTableData,
-  getVoltageStats,
+  getStatusDeviceLength,
+  getVoltageStat,
 } from 'containers/GlobalDashboard/globalDashboard.utils'
 import { ConnectionTypeDataable } from 'types/connectionType'
 import { DashboardDeviceable } from 'types/dashboardDevice'
 import { InfoTableable } from 'types/infoTable'
-import { VoltageStatable } from 'types/voltageStats'
+import { VoltageStatable } from 'types/voltageStat'
 
 describe('GlobalDashboard Utils', () => {
   const param: DashboardDeviceable[] = [
@@ -54,9 +55,9 @@ describe('GlobalDashboard Utils', () => {
       ])
     })
   })
-  describe('getVoltageStats', () => {
+  describe('getVoltageStat', () => {
     it('should return VoltageStatable[] type shape data when DashboardDeviceable[] type params in provided', () => {
-      const result: VoltageStatable[] = getVoltageStats(param)
+      const result: VoltageStatable[] = getVoltageStat(param)
       expect(result).toEqual([
         {
           name: param[0].serial_number,
@@ -77,6 +78,14 @@ describe('GlobalDashboard Utils', () => {
         { connection_type: 'wifi', length: 1 },
         { connection_type: 'cellular', length: 0 },
       ])
+    })
+  })
+  describe('getStatusDeviceLength', () => {
+    it('should return the length of device matching the status provided', () => {
+      const resultConnected: number = getStatusDeviceLength(param, 'connected')
+      const resultDisconnected: number = getStatusDeviceLength(param, 'disconnected')
+      expect(resultConnected).toEqual(1)
+      expect(resultDisconnected).toEqual(1)
     })
   })
 })

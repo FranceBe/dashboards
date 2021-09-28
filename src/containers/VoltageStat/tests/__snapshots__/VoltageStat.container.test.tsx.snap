@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`VoltageStats should match snapshot 1`] = `
+exports[`VoltageStat should match snapshot 1`] = `
 <div
   class="sc-bdnxRM bsccyY"
 >

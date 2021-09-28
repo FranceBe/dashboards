@@ -62,7 +62,7 @@ describe('GlobalDashboard', () => {
       )
       expect(container.firstChild).toMatchSnapshot()
     })
-    it('should display VoltageStats', async () => {
+    it('should display VoltageStat', async () => {
       await waitFor(() =>
         render(
           <Router>
@@ -71,9 +71,9 @@ describe('GlobalDashboard', () => {
         ),
       )
       // We test the legend text 'voltage' that should be displayed in the
-      // ChartBar component used in VoltageStats
+      // ChartBar component used in VoltageStat
       expect(screen.getByText('voltage')).toBeInTheDocument()
-      // We test the presence of ChartBar component used in VoltageStats
+      // We test the presence of ChartBar component used in VoltageStat
       expect(screen.getByTestId('chart-bar')).toBeInTheDocument()
     })
     it('should display ConnectionTypeStat', async () => {
@@ -87,7 +87,7 @@ describe('GlobalDashboard', () => {
       // We test the presence of ChartPie component used in ConnectionTypeStat
       expect(screen.getByTestId('chart-pie')).toBeInTheDocument()
     })
-    it('should display InfoTable', async () => {
+    it('should display InfoTable & StatusStat', async () => {
       await waitFor(() =>
         render(
           <Router>
@@ -121,8 +121,11 @@ describe('GlobalDashboard', () => {
       expect(screen.getByTestId('icon-wifi')).toBeInTheDocument()
       expect(screen.getByTestId('icon-ethernet')).toBeInTheDocument()
       // We test the presence of each status as icon
-      expect(screen.getByTestId('signal-off')).toBeInTheDocument()
-      expect(screen.getAllByTestId('signal-on')).toHaveLength(2)
+      // Icons should display twice : once in InfoTable and once in StatusStat
+      expect(screen.getAllByTestId('signal-off')).toHaveLength(2)
+      expect(screen.getAllByTestId('signal-on')).toHaveLength(3) // signal on is
+      // displayed 3 times, once in StatusStat and 2 in InfoTable because there are 2 devices that
+      // are connected in the mocked data for this test
     })
   })
 })
