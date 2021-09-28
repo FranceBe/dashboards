@@ -25,11 +25,22 @@ export const spaces: { [key: string]: string } = {
 
 // Font sizes to use in project
 export const fontSizes: { [key: string]: string } = {
-  small: '12px',
+  large: '1.5rem',
+  small: '0.75rem',
 }
 
 // Specific elements to use in project
 export const elements: { [key: string]: string } = {
   box_shadow:
     '0 5px 25px 0 rgba(0, 0, 45, 0.1), 0 2px 6px 0 rgba(0, 0, 0, 0.04),\n    0 16px 24px 0 rgba(0, 0, 46, 0.06)',
+}
+
+// Screen sizes for media queries
+export const querieSizes: { [key: string]: number } = {
+  lg: 992,
+  md: 768,
+  sm: 576,
+  xl: 1200,
+  xs: 320,
+  xxl: 1600,
 }

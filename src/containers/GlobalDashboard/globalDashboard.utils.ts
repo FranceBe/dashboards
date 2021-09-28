@@ -30,3 +30,8 @@ export const getConnectionTypeData = (devices: DashboardDeviceable[]): Connectio
     { connection_type: 'cellular', length: cellularLength },
   ]
 }
+
+export const getStatusDeviceLength = (
+  devices: DashboardDeviceable[],
+  status: 'connected' | 'disconnected',
+): number => devices.filter((device) => device.status === status).length

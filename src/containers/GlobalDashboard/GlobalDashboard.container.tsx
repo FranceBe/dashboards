@@ -8,9 +8,11 @@ import {
 import {
   getConnectionTypeData,
   getInfoTableData,
+  getStatusDeviceLength,
   getVoltageStats,
 } from 'containers/GlobalDashboard/globalDashboard.utils'
 import InfoTable from 'containers/InfoTable'
+import StatusStat from 'containers/StatusStat'
 import VoltageStats from 'containers/VoltageStats'
 import React from 'react'
 import { DashboardDeviceable } from 'types/dashboardDevice'
@@ -30,6 +32,10 @@ export const GlobalDashboard: React.FC = () => {
           <ChartsContainer>
             <VoltageStats devicesVoltage={getVoltageStats(devicesData)} />
             <ConnectionTypeStat devicesConnectionType={getConnectionTypeData(devicesData)} />
+            <StatusStat
+              connectedLength={getStatusDeviceLength(devicesData, 'connected')}
+              disconnectedLength={getStatusDeviceLength(devicesData, 'disconnected')}
+            />
           </ChartsContainer>
           <InfoTableContainer>
             <InfoTable devicesInfo={getInfoTableData(devicesData)} />
