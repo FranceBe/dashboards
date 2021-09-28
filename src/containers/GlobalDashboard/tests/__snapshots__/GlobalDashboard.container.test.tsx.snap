@@ -11,7 +11,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
     class="sc-gKAaRy HERac"
   >
     <div
-      class="sc-jgPyTC fowKOU"
+      class="sc-jgPyTC fhEzku"
     >
       <h2>
         Voltage per device
@@ -620,7 +620,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
       </div>
     </div>
     <div
-      class="sc-hKFxyN gRYmfP"
+      class="sc-hKFxyN dQIPIx"
     >
       <h2>
         Connection Type Ratio
@@ -697,10 +697,10 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
         class="sc-dPaNzc fsnMSQ"
       >
         <div
-          class="sc-bBjRSN ifWgyn"
+          class="sc-bBjRSN dgvwGk"
         >
           <div
-            class="sc-cOifOu dtLyyn"
+            class="sc-cOifOu ijLfvZ"
           >
             <div
               class="sc-pNWdM kYEyMF"
@@ -743,10 +743,10 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
           class="sc-Arkif eFGdmg"
         />
         <div
-          class="sc-bBjRSN ifWgyn"
+          class="sc-bBjRSN dgvwGk"
         >
           <div
-            class="sc-cOifOu dtLyyn disconnected-ratio"
+            class="sc-cOifOu ijLfvZ"
           >
             <div
               class="sc-pNWdM fPSUZF"

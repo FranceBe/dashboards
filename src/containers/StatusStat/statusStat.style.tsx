@@ -21,14 +21,12 @@ export const ColumnContainer = styled.div`
   padding-right: 20px;
   padding-left: 20px;
   width: 48%;
-  .disconnected-ratio {
-    align-self: flex-end;
-  }
 `
 
 export const LineContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
 `
 
 export const Separator = styled.div`
