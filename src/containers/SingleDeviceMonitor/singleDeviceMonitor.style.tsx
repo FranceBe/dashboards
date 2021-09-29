@@ -12,4 +12,7 @@ export const CardContainer = styled.div`
   h2 {
     text-align: center;
   }
+  .live-voltage {
+    margin-top: ${spaces.large};
+  }
 `

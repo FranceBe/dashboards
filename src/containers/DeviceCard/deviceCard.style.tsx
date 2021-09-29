@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { elements, palette, spaces } from 'styles/variables'
+import { elements, fontSizes, palette, spaces } from 'styles/variables'
 
 export const CardContainer = styled.div`
   background-color: ${palette.white};
@@ -9,7 +9,7 @@ export const CardContainer = styled.div`
   box-shadow: ${elements.box_shadow};
   border: 1px solid ${palette.grey_primary};
   border-radius: ${spaces.small};
-  font-size: 20px;
+  font-size: ${fontSizes.medium};
   .small-icon {
     margin-right: ${spaces.small};
     color: ${palette.blue_secondary};

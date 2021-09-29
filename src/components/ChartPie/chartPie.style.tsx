@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import { palette, spaces } from 'styles/variables'
+import { fontSizes, palette, spaces } from 'styles/variables'
 
 export const COLORS = [palette.blue_primary, palette.purple_secondary, palette.green_secondary]
 
 export const Text = styled.text`
   fill: ${palette.white};
-  font-size: 20px;
+  font-size: ${fontSizes.medium};
 `
 
 export const TooltipContainer = styled.div`

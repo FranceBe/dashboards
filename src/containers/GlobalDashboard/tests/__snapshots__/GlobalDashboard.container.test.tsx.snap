@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
+exports[`GlobalDashboard should match snapshot 1`] = `
 <div
   class="sc-eCApnc hkrslo"
 >
@@ -8,7 +8,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
     Global Dashboard
   </h1>
   <div
-    class="sc-gKAaRy HERac"
+    class="sc-gKAaRy furWkZ"
   >
     <div
       class="sc-jgPyTC fhEzku"
@@ -789,7 +789,7 @@ exports[`GlobalDashboard GlobalDashboard should match snapshot 1`] = `
     </div>
   </div>
   <div
-    class="sc-jSFjdj cMHfVW"
+    class="sc-jSFjdj fRBskS"
   >
     <div
       class="sc-iCoGMd boQGpo info-table"
