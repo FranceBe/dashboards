@@ -51,7 +51,8 @@ export const columns: TableColumn<InfoTableable>[] = [
     grow: 0.5,
     name: 'connection_type',
     selector: (row: InfoTableable) => <ConnectionType connection_type={row.connection_type} />,
-    sortFunction: (rowA, rowB) => rowA.name.toLowerCase().localeCompare(rowB.name.toLowerCase()),
+    sortFunction: (rowA, rowB) =>
+      rowA.connection_type.toLowerCase().localeCompare(rowB.connection_type.toLowerCase()),
     sortable: true,
   },
   {

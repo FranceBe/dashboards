@@ -51,26 +51,27 @@ describe('InfoTable', () => {
     )
     expect(screen.getAllByTestId('status-container')).toHaveLength(devicesInfo.length)
   })
-  it('should sort by serial_number in asc order when header "serial_number" is clicked', () => {
+  it('should sort by serial_number in desc order when header "serial_number" is clicked', () => {
     render(
       <Router>
         <InfoTable devicesInfo={devicesInfo} />
       </Router>,
     )
     const nameHeader = screen.getAllByRole('columnheader')[0]
+    userEvent.click(nameHeader)
+    // It should sort in desc order because by default the serial_number column is already sorted
+    expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_2')
+  })
+  it('should sort by serial_number in asc order when header "serial_number" is clicked twice', () => {
+    render(
+      <Router>
+        <InfoTable devicesInfo={devicesInfo} />
+      </Router>,
+    )
+    const nameHeader = screen.getAllByRole('columnheader')[0]
+    userEvent.click(nameHeader)
     userEvent.click(nameHeader)
     expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_0')
-  })
-  it('should sort by serial_number in desc order when header "serial_number" is clicked twice', () => {
-    render(
-      <Router>
-        <InfoTable devicesInfo={devicesInfo} />
-      </Router>,
-    )
-    const nameHeader = screen.getAllByRole('columnheader')[0]
-    userEvent.click(nameHeader)
-    userEvent.click(nameHeader)
-    expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_2')
   })
   it('should sort by mac_wifi (alphanumeric) when header "mac_wifi" is clicked', () => {
     render(
@@ -110,7 +111,7 @@ describe('InfoTable', () => {
     )
     const nameHeader = screen.getAllByRole('columnheader')[4]
     userEvent.click(nameHeader)
-    expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_0')
+    expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_1')
   })
   it('should sort by status "connected" when header "status" is clicked', () => {
     render(
