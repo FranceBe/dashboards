@@ -2,16 +2,36 @@
 An app that displays a dashboard from API data
 
 ## Menu
+[How to use App with docker-compose](#how-to-use-app-with-docker-compose)
+
 [How to use App with no docker](#how-to-use-app-with-no-docker)
+
 [Note](#note)
+
+## How to use App with docker-compose
+
+### Quick start (API & App)
+
+---
+
+`docker-compose up`
+
+---
+
+/!\ It might take few minutes to start because of the `npm i` command and the `webpack` build for front-end app and storybook. /!\
+
+App will be accessible on port `4000` and storybook on port `6006`
+
+
 ## How to use App with no docker
 
 ### Quick start (API & App)
 
 ---
-1- Start the API using `uvicorn backend.main:app --host 0.0.0.0 --port 8010 --reload`
 
-2- Start the App using `npm start`
+1- Start the API using `uvicorn backend.main:app --host 0.0.0.0 --port 8010 --reload`
+2- Install dependencies using `npm i`
+3- Start the App using `npm start`
 
 ---
 
@@ -22,7 +42,7 @@ An app that displays a dashboard from API data
 ---
 
 - `start` : use `per-env` to call either `start:development` or `start:production` depending on the variable `NODE_ENV`. By default
-this variable is set to `development`. This script will start the express app that serve the front-end.
+this variable is set to `development`. This script will start the express app that serve the front-end. App will be accessible on port 4000.
 - `start:development`: start the express in app with hot reload and serve the front-end also with hot reload.
 - `start:production`: build the app and start it in production mode.
 - `start-front`: use `per-env` to call either `start-front:development` or `start-front:production` depending on the variable `NODE_ENV`. By default
