@@ -1,10 +1,10 @@
 import ConnectionType from 'components/ConnectionType/ConnectionType.component'
 import { Status } from 'components/Status/Status.component'
-import moment from 'moment'
 import React from 'react'
 import { TableColumn } from 'react-data-table-component'
 import { Link } from 'react-router-dom'
 import { InfoTableable } from 'types/infoTable'
+import { momentFormatter } from 'utils/momentFormatter'
 
 export const columns: TableColumn<InfoTableable>[] = [
   {
@@ -43,7 +43,7 @@ export const columns: TableColumn<InfoTableable>[] = [
   {
     name: 'last_seen_at',
     selector: (row: InfoTableable) => {
-      return moment(row.last_seen_at).format('MMMM Do YYYY, h:mm:ss a')
+      return momentFormatter(row.last_seen_at)
     },
     sortable: true,
   },

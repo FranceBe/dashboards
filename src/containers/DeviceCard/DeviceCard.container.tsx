@@ -17,9 +17,9 @@ import {
   Value,
 } from 'containers/DeviceCard/deviceCard.style'
 import { convertStringForTitle } from 'containers/DeviceCard/deviceCard.utils'
-import moment from 'moment'
 import React, { ReactElement } from 'react'
 import { DashboardDeviceable } from 'types/dashboardDevice'
+import { momentFormatter } from 'utils/momentFormatter'
 
 export const DeviceCard: React.FC<{ device: DashboardDeviceable }> = ({ device }) => {
   const iconByType: Record<'ethernet' | 'wifi' | 'cellular', ReactElement> = {
@@ -47,7 +47,7 @@ export const DeviceCard: React.FC<{ device: DashboardDeviceable }> = ({ device }
             <VisibilityIcon className={'small-icon'} />
             <Label>{convertStringForTitle('last_seen_at')}</Label>
             {' : '}
-            <Value>{moment(device.last_seen_at).format('MMMM Do YYYY, h:mm:ss a')}</Value>
+            <Value>{momentFormatter(device.last_seen_at)}</Value>
           </InfoContainer>
           <InfoContainer className={'info-container'}>
             {iconByType[device.connection_type]}

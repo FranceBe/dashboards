@@ -3,9 +3,9 @@ import 'jest-styled-components'
 
 import { render, screen } from '@testing-library/react'
 import DeviceCard from 'containers/DeviceCard/index'
-import moment from 'moment'
 import React from 'react'
 import { DashboardDeviceable } from 'types/dashboardDevice'
+import { momentFormatter } from 'utils/momentFormatter'
 
 describe('DeviceCard', () => {
   const device: DashboardDeviceable = {
@@ -31,9 +31,7 @@ describe('DeviceCard', () => {
     expect(screen.getByText('Voltage')).toBeInTheDocument()
     expect(screen.getByText('8.167522699950393')).toBeInTheDocument()
     expect(screen.getByText('Last seen at')).toBeInTheDocument()
-    expect(
-      screen.getByText(moment('2021-09-27T14:59:09.021426').format('MMMM Do YYYY, h:mm:ss a')),
-    ).toBeInTheDocument()
+    expect(screen.getByText(momentFormatter('2021-09-27T14:59:09.021426'))).toBeInTheDocument()
     expect(screen.getByText('Mac wifi')).toBeInTheDocument()
     expect(screen.getByText('44:20:82:3c:fd:e6')).toBeInTheDocument()
     expect(screen.getByText('Sim id')).toBeInTheDocument()

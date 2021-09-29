@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { querieSizes, spaces } from 'styles/variables'
+import { spaces } from 'styles/variables'
 
 export const Dashboard = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ export const Dashboard = styled.div`
   }
 `
 export const InfoTableContainer = styled.div`
-  width: 90%;
+  width: 100%;
   align-self: center;
   margin-top: ${spaces.large};
 `
@@ -18,7 +18,7 @@ export const InfoTableContainer = styled.div`
 export const ChartsContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-basis: 50%;
   flex-wrap: wrap;
   width: 100%;
