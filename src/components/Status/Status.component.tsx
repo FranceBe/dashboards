@@ -1,3 +1,5 @@
+// Status component to display an icon matching
+// The device status with a specific color
 import Tooltip from '@material-ui/core/Tooltip'
 import SignalCellular4BarIcon from '@material-ui/icons/SignalCellular4Bar'
 import SignalCellularOffIcon from '@material-ui/icons/SignalCellularOff'

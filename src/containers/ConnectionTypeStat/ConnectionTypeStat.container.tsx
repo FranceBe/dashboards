@@ -1,3 +1,4 @@
+// Display a ChartPie that shows the number of each connection_type
 import ChartPie from 'components/ChartPie'
 import { ConnectionTypeStatContainer } from 'containers/ConnectionTypeStat/connectionTypeStat.style'
 import React from 'react'

@@ -1,3 +1,5 @@
+// Display ratio for connected and disconnected device
+// To monitor how many devices are currently on or off
 import RatioCircle from 'components/RatioCircle'
 import Status from 'components/Status/Status.component'
 import {

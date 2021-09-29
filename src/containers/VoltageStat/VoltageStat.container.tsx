@@ -1,3 +1,4 @@
+// Display a bar chart to monitor voltage of each device
 import ChartBar from 'components/ChartBar'
 import { VoltageStatContainer } from 'containers/VoltageStat/voltageStat.style'
 import React from 'react'

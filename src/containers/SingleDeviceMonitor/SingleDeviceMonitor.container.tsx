@@ -1,3 +1,4 @@
+// Display all information for a specific device
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import Loading from 'components/Loading'
 import DeviceCard from 'containers/DeviceCard'
@@ -15,6 +16,7 @@ import { useFetch } from 'utils/useFetch'
 
 export const SingleDeviceMonitor: React.FC<RouteComponentProps> = ({ match }) => {
   const { id } = match.params as { id: number }
+  // Using useFetch custom hook to call Api with a specific id using current URL to get a specific device
   const { data } = useFetch<DashboardDeviceable>(`api/device/${id}`)
   let deviceData
   if (data && 'serial_number' in data) {

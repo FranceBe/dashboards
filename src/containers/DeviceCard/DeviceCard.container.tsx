@@ -1,3 +1,4 @@
+// Display all info for a specific device
 import ConfirmationNumberIcon from '@material-ui/icons/ConfirmationNumber'
 import ContactlessIcon from '@material-ui/icons/Contactless'
 import FlashOnIcon from '@material-ui/icons/FlashOn'

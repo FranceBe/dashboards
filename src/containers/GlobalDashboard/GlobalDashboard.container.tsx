@@ -1,3 +1,4 @@
+// Global Dashboard displaying information of all devices
 import Loading from 'components/Loading'
 import ConnectionTypeStat from 'containers/ConnectionTypeStat'
 import {
@@ -19,6 +20,9 @@ import { DashboardDeviceable } from 'types/dashboardDevice'
 import { useFetch } from 'utils/useFetch'
 
 export const GlobalDashboard: React.FC = () => {
+  // Using useFetch custom hook to call Api to get all devices data
+  // We could add a "refresh" button or a real-time refresh to
+  // Get fresh data anytime without clicking on browser "reload" button
   const { data } = useFetch<DashboardDeviceable>('/api/devices')
   let devicesData
   if (data && Array.isArray(data) && data.length) {
