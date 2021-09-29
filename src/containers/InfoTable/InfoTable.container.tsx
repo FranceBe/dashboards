@@ -12,6 +12,7 @@ export const InfoTable: React.FC<InfoTableProps> = ({ devicesInfo }) => {
         data={devicesInfo}
         pagination
         paginationComponentOptions={paginationOptions}
+        defaultSortFieldId={1}
       />
     </TableContainer>
   )

@@ -817,7 +817,7 @@ exports[`GlobalDashboard should match snapshot 1`] = `
                   data-column-id="1"
                 >
                   <div
-                    class="sc-hHEiqL lagkTj rdt_TableCol_Sortable"
+                    class="sc-hHEiqL gQfJaz rdt_TableCol_Sortable"
                     data-column-id="1"
                     data-sort-id="1"
                     role="columnheader"
@@ -830,7 +830,7 @@ exports[`GlobalDashboard should match snapshot 1`] = `
                       serial_number
                     </div>
                     <span
-                      class="sc-iemWCZ cdwHRR"
+                      class="sc-iemWCZ gpuhwU"
                     >
                       ▲
                     </span>
