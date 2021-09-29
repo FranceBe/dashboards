@@ -1,17 +1,42 @@
 version: "3.8"
 
-services: 
+services:
   backend:
     image: quizz-back
     build:
       context: backend
     restart: always
-    environment: 
+    environment:
       DEBUG: 1
-    ports: 
+    ports:
       - 8010:8000
     volumes:
       - ./backend/src:/app/backend
-
-  # frontend:
-  #   ...
+  frontend:
+    image: frontend
+    build:
+      context: ./
+    restart: always
+    ports:
+      - 4000:4000
+    volumes:
+      - ./:/app
+    depends_on:
+      - backend
+    links:
+      - backend
+    environment:
+      - NODE_ENV=production
+      - DOCKER_RUNNING=true
+  storybook:
+    build:
+      context: ./
+    image: storybook
+    command: npm run storybook
+    ports:
+    - 6006:6006
+    volumes:
+    - /app/node_modules
+    -  ./:/app
+    depends_on:
+      - frontend
