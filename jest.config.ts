@@ -8,6 +8,8 @@ module.exports = {
   collectCoverageFrom: [
     '**/!(*.d)*.ts',
     '**/!(*.d)*.tsx',
+    '!src/**/*.story.tsx',
+    '!src/**/*.index.ts',
     '!src/index.tsx',
     '!server/index.ts',
     '!jest.config.ts',
