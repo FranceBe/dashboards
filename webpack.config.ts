@@ -19,7 +19,7 @@ export const config: Configuration = {
     contentBase: join(baseDir, 'dist/src'),
     hot: false,
     liveReload: false,
-    port: 4000,
+    port: 4010,
   },
   entry: resolve(baseDir, 'src', 'index.tsx'),
   mode: dev ? 'development' : 'production',
@@ -67,6 +67,11 @@ export const config: Configuration = {
     filename: 'index.js',
     path: resolve(baseDir, 'dist/src'),
     publicPath: '/',
+  },
+  performance: {
+    hints: false,
+    maxAssetSize: 512000,
+    maxEntrypointSize: 512000,
   },
   plugins: [htmlPlugin, new CleanWebpackPlugin()],
   resolve: {

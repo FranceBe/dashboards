@@ -9,10 +9,15 @@ const cors = require('cors')
 import { Serverable } from '../types/server'
 import { config as webpackConfig } from '../webpack.config'
 
+require('dotenv').config()
 const frontSrcBasedir = resolve(__dirname, '..', 'dist', 'src')
 const htmlFile = join(frontSrcBasedir, 'index.html')
 const staticMw = staticFactory(frontSrcBasedir)
 
+let baseUrl = 'http://localhost'
+if (process.env.DOCKER_RUNNING === 'true') {
+  baseUrl = 'http://host.docker.internal'
+}
 export class Server implements Serverable {
   public app: Express
   public readonly port: number | string
@@ -39,8 +44,8 @@ export class Server implements Serverable {
     }
     // Connect the express backend to the API
     this.app.get('/api/devices', (req: Request, res: Response) => {
-      const baseUrl = 'http://localhost:8010/devices'
-      request(baseUrl, { json: true, qs: req.query }, (error, response, body) => {
+      const url = `${baseUrl}:8010/devices`
+      request(url, { json: true, qs: req.query }, (error, response, body) => {
         if (error) {
           res.send(error)
           return
@@ -49,18 +54,14 @@ export class Server implements Serverable {
       })
     })
     this.app.get('/api/device/:id', (req: Request, res: Response) => {
-      const baseUrl = 'http://localhost:8010/device'
-      request(
-        `${baseUrl}/${req.params.id}`,
-        { json: true, qs: req.query },
-        (error, response, body) => {
-          if (error) {
-            res.send(error)
-            return
-          }
-          res.json(body)
-        },
-      )
+      const url = `${baseUrl}:8010/device`
+      request(`${url}/${req.params.id}`, { json: true, qs: req.query }, (error, response, body) => {
+        if (error) {
+          res.send(error)
+          return
+        }
+        res.json(body)
+      })
     })
     // Connect the express backend to the frontend
     this.app.get('/', (req: Request, res: Response): void => {
@@ -75,8 +76,8 @@ export class Server implements Serverable {
     this.init()
     this.server = this.app.listen(this.port, () =>
       console.log(
-        `${chalk.yellow('⚡')}️[server]: ${chalk.green('Server')} is running at ${chalk.blue(
-          `http://localhost:${this.port}`,
+        `${chalk.yellow('⚡')}️ [server]: ${chalk.green('Server')} is running ${chalk.yellow(
+          '⚡',
         )}`,
       ),
     )
