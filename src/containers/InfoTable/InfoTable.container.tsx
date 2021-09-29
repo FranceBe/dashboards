@@ -1,3 +1,5 @@
+// Display a sortable table using the module React-data-table
+// To show information about each device
 import { TableContainer } from 'containers/InfoTable/infoTable.style'
 import { columns, paginationOptions } from 'containers/InfoTable/infoTable.utils'
 import React from 'react'

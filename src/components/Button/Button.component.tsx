@@ -1,3 +1,4 @@
+// Button component
 import { ButtonDefault } from 'components/Button/button.style'
 import React, { ButtonHTMLAttributes } from 'react'
 

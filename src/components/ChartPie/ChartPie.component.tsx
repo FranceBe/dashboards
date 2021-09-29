@@ -1,3 +1,6 @@
+// ChartPie component that wraps the module Recharts
+// So we can use this component in project
+// Instead of using Recharts everytime we need a ChartPie
 import { COLORS, Text, TooltipContainer } from 'components/ChartPie/chartPie.style'
 import React, { ReactElement } from 'react'
 import { Cell, Pie, PieChart, Tooltip } from 'recharts'

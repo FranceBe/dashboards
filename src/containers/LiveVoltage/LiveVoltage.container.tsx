@@ -1,3 +1,6 @@
+// Display a real time ChartLine
+// In real-life we assume that the device voltage will be variable
+// So this container mocks data to display a more visual ChartLine
 import Button from 'components/Button'
 import ChartLine from 'components/ChartLine'
 import {

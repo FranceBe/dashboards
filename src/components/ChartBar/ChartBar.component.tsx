@@ -1,3 +1,6 @@
+// ChartBar component that wraps the module Recharts
+// So we can use this component in project
+// Instead of using Recharts everytime we need a ChartBar
 import React from 'react'
 import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts'
 import { palette } from 'styles/variables'

@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom'
 import { InfoTableable } from 'types/infoTable'
 import { momentFormatter } from 'utils/momentFormatter'
 
+// Set up for react-data-table component
+// Define each column with data we need to show and sort
 export const columns: TableColumn<InfoTableable>[] = [
   {
     grow: 1,

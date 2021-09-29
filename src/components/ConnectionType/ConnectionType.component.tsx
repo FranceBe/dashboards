@@ -1,3 +1,5 @@
+// ConnectionType component to display an icon matching
+// The device connection type with a specific color
 import Tooltip from '@material-ui/core/Tooltip'
 import SettingsEthernetIcon from '@material-ui/icons/SettingsEthernet'
 import SignalCellularAltIcon from '@material-ui/icons/SignalCellularAlt'
