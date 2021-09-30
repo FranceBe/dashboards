@@ -6,6 +6,6 @@ COPY ["package.json", "package-lock.json", "./"]
 
 RUN npm install
 
-COPY ["dist", "node_modules", ".storybook", "./"]
+COPY . .
 
 CMD [ "npm", "start" ]
