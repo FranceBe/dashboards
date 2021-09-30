@@ -270,7 +270,7 @@ exports[`SingleDeviceMonitor should match snapshot 1`] = `
             >
               <defs>
                 <clippath
-                  id="recharts1-clip"
+                  id="recharts4-clip"
                 >
                   <rect
                     height="260"

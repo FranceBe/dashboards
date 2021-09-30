@@ -35,92 +35,48 @@ describe('InfoTable', () => {
       status: 'disconnected',
     },
   ]
-  it('should match snapshot', () => {
-    const { container } = render(
+  const setupTest = (props = {}) => {
+    return render(
       <Router>
-        <InfoTable devicesInfo={devicesInfo} />
+        <InfoTable devicesInfo={devicesInfo} {...props} />
       </Router>,
     )
+  }
+  it('should match snapshot', () => {
+    const { container } = setupTest()
+
     expect(container.firstChild).toMatchSnapshot()
   })
+
   it('should display as many status-container as there are devices', () => {
-    render(
-      <Router>
-        <InfoTable devicesInfo={devicesInfo} />
-      </Router>,
-    )
+    setupTest()
+
     expect(screen.getAllByTestId('status-container')).toHaveLength(devicesInfo.length)
   })
-  it('should sort by serial_number in desc order when header "serial_number" is clicked', () => {
-    render(
-      <Router>
-        <InfoTable devicesInfo={devicesInfo} />
-      </Router>,
-    )
-    const nameHeader = screen.getAllByRole('columnheader')[0]
-    userEvent.click(nameHeader)
-    // It should sort in desc order because by default the serial_number column is already sorted
-    expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_2')
-  })
+
+  const cases: string[][] = [
+    ['serial_number', 'desc', 'device_2'],
+    ['mac_wifi', 'asc', 'device_2'],
+    ['sim_id', 'asc', 'device_2'],
+    ['last_seen_at', 'asc', 'device_0'],
+    ['connection_type', 'asc', 'device_1'],
+    ['status', 'asc', 'device_0'],
+  ]
+  it.each(cases)(
+    'should sort by %s in %s order when corresponding header is clicked',
+    (headerName: string, order: string, deviceName: string) => {
+      setupTest()
+      const header = screen.getByRole('columnheader', { name: `${headerName} ▲` })
+      userEvent.click(header)
+      expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass(deviceName)
+    },
+  )
   it('should sort by serial_number in asc order when header "serial_number" is clicked twice', () => {
-    render(
-      <Router>
-        <InfoTable devicesInfo={devicesInfo} />
-      </Router>,
-    )
-    const nameHeader = screen.getAllByRole('columnheader')[0]
+    setupTest()
+
+    const nameHeader = screen.getByRole('columnheader', { name: /serial_number/ })
     userEvent.click(nameHeader)
     userEvent.click(nameHeader)
     expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_0')
-  })
-  it('should sort by mac_wifi (alphanumeric) when header "mac_wifi" is clicked', () => {
-    render(
-      <Router>
-        <InfoTable devicesInfo={devicesInfo} />
-      </Router>,
-    )
-    const nameHeader = screen.getAllByRole('columnheader')[1]
-    userEvent.click(nameHeader)
-    expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_2')
-  })
-  it('should sort by sim_id (alphanumeric) when header "sim_id" is clicked', () => {
-    render(
-      <Router>
-        <InfoTable devicesInfo={devicesInfo} />
-      </Router>,
-    )
-    const nameHeader = screen.getAllByRole('columnheader')[2]
-    userEvent.click(nameHeader)
-    expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_2')
-  })
-  it('should sort by last_seen_at (by date) when header "last_seen_at" is clicked', () => {
-    render(
-      <Router>
-        <InfoTable devicesInfo={devicesInfo} />
-      </Router>,
-    )
-    const nameHeader = screen.getAllByRole('columnheader')[3]
-    userEvent.click(nameHeader)
-    expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_0')
-  })
-  it('should sort by connection_type when header "connection_type" is clicked', () => {
-    render(
-      <Router>
-        <InfoTable devicesInfo={devicesInfo} />
-      </Router>,
-    )
-    const nameHeader = screen.getAllByRole('columnheader')[4]
-    userEvent.click(nameHeader)
-    expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_1')
-  })
-  it('should sort by status "connected" when header "status" is clicked', () => {
-    render(
-      <Router>
-        <InfoTable devicesInfo={devicesInfo} />
-      </Router>,
-    )
-    const nameHeader = screen.getAllByRole('columnheader')[5]
-    userEvent.click(nameHeader)
-    expect(screen.getAllByText('device', { exact: false })[0]).toHaveClass('device_0') // device 0 is the first device to be connected so it should appear first
   })
 })

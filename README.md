@@ -154,6 +154,7 @@ The server has 3 routes :
 
 The backend is used to control and handle API calls. In this case it is only meant to serve the local API response 
 instead of using directly browser.
+PROXY PROXY PROXY
 In a bigger React App, using an express backend could be [useful](https://codeburst.io/why-would-you-implement-a-backend-for-your-react-app-365bb8a8431d)
 for server-side-rendering or for call a data-base.
 

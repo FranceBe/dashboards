@@ -1,99 +1,86 @@
 import '@testing-library/jest-dom/extend-expect'
 
-import { render, screen, waitFor } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { GlobalDashboard } from 'containers/GlobalDashboard'
-import fetch from 'jest-fetch-mock'
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { momentFormatter } from 'utils/momentFormatter'
+import * as customHook from 'utils/useFetch'
 
 describe('GlobalDashboard', () => {
   // Set up
-  // Mock fetch response so we does not need to call real API for testing
-  beforeEach(() => {
-    fetch.enableMocks()
-    fetch.mockResponseOnce(
-      JSON.stringify({
-        results: [
-          {
-            connection_type: 'ethernet',
-            last_seen_at: '2021-09-26T15:10:44.987',
-            mac_wifi: 'c5:d7:14:84:f8:cf',
-            serial_number: 'device_0',
-            sim_id: 98962001,
-            status: 'connected',
-            url: 'http://url.com',
-            voltage: 1234.933884,
-          },
-          {
-            connection_type: 'wifi',
-            last_seen_at: '2021-09-26T15:10:43.987',
-            mac_wifi: 'c4:d7:14:84:f8:cf',
-            serial_number: 'device_1',
-            sim_id: 98962002,
-            status: 'disconnected',
-            url: 'http://url.com',
-            voltage: 14.84,
-          },
-          {
-            connection_type: 'cellular',
-            last_seen_at: '2021-09-26T15:10:42.987',
-            mac_wifi: 'a4:d7:14:84:f8:cf',
-            serial_number: 'device_2',
-            sim_id: 98962003,
-            status: 'connected',
-            url: 'http://url.com',
-            voltage: 3431.84,
-          },
-        ],
-      }),
-    )
+  // Mock fetch response so we do not need to call real API for testing
+  const spy = jest.spyOn(customHook, 'useFetch')
+  spy.mockReturnValue({
+    data: [
+      {
+        connection_type: 'ethernet',
+        last_seen_at: '2021-09-26T15:10:44.987',
+        mac_wifi: 'c5:d7:14:84:f8:cf',
+        serial_number: 'device_0',
+        sim_id: 98962001,
+        status: 'connected',
+        url: 'http://url.com',
+        voltage: 1234.933884,
+      },
+      {
+        connection_type: 'wifi',
+        last_seen_at: '2021-09-26T15:10:43.987',
+        mac_wifi: 'c4:d7:14:84:f8:cf',
+        serial_number: 'device_1',
+        sim_id: 98962002,
+        status: 'disconnected',
+        url: 'http://url.com',
+        voltage: 14.84,
+      },
+      {
+        connection_type: 'cellular',
+        last_seen_at: '2021-09-26T15:10:42.987',
+        mac_wifi: 'a4:d7:14:84:f8:cf',
+        serial_number: 'device_2',
+        sim_id: 98962003,
+        status: 'connected',
+        url: 'http://url.com',
+        voltage: 3431.84,
+      },
+    ],
+    status: 'fetched',
   })
-  it('should match snapshot', async () => {
+
+  // Setup Test with render
+  const setupTest = () => {
+    return render(
+      <Router>
+        <GlobalDashboard />
+      </Router>,
+    )
+  }
+  it('should match snapshot', () => {
     // We need to await the render because GlobalDashboard use
     // The useFetch hooks
-    const { container } = await waitFor(() =>
-      render(
-        <Router>
-          <GlobalDashboard />
-        </Router>,
-      ),
-    )
+    const { container } = setupTest()
+
     expect(container.firstChild).toMatchSnapshot()
   })
-  it('should display VoltageStat', async () => {
-    await waitFor(() =>
-      render(
-        <Router>
-          <GlobalDashboard />
-        </Router>,
-      ),
-    )
-    // We test the legend text 'voltage' that should be displayed in the
-    // ChartBar component used in VoltageStat
+
+  it('should display VoltageStat', () => {
+    setupTest()
+
     expect(screen.getByText('voltage')).toBeInTheDocument()
     // We test the presence of ChartBar component used in VoltageStat
     expect(screen.getByTestId('chart-bar')).toBeInTheDocument()
   })
-  it('should display ConnectionTypeStat', async () => {
-    await waitFor(() =>
-      render(
-        <Router>
-          <GlobalDashboard />
-        </Router>,
-      ),
-    )
+
+  it('should display ConnectionTypeStat', () => {
+    setupTest()
+
     // We test the presence of ChartPie component used in ConnectionTypeStat
     expect(screen.getByTestId('chart-pie')).toBeInTheDocument()
   })
-  it('should display InfoTable & StatusStat', async () => {
-    await waitFor(() =>
-      render(
-        <Router>
-          <GlobalDashboard />
-        </Router>,
-      ),
-    )
+
+  it('should display InfoTable & StatusStat', () => {
+    setupTest()
+
     // We test the presence of each serial_number as text
     // We should find 2 times the serial_number as text
     // because it is rendered once in ChartBar (as axis legend)

@@ -18,10 +18,11 @@ export const SingleDeviceMonitor: React.FC<RouteComponentProps> = ({ match }) =>
   const { id } = match.params as { id: number }
   // Using useFetch custom hook to call Api with a specific id using current URL to get a specific device
   const { data } = useFetch<DashboardDeviceable>(`api/device/${id}`)
-  let deviceData
-  if (data && 'serial_number' in data) {
-    deviceData = data
+
+  if (!data || Array.isArray(data)) {
+    return <Loading />
   }
+
   return (
     <div>
       <Link to={'/'}>
@@ -30,21 +31,15 @@ export const SingleDeviceMonitor: React.FC<RouteComponentProps> = ({ match }) =>
         </LinkContainer>
       </Link>
       <CardContainer>
-        {deviceData ? (
-          <>
-            <h2>Monitoring - {deviceData.serial_number}</h2>
-            <DeviceCard device={deviceData} />
-            <LiveVoltage
-              deviceId={id}
-              initialVoltage={{
-                time: momentFormatter(deviceData.last_seen_at),
-                voltage: deviceData.voltage,
-              }}
-            />
-          </>
-        ) : (
-          <Loading />
-        )}
+        <h2>Monitoring - {data.serial_number}</h2>
+        <DeviceCard device={data} />
+        <LiveVoltage
+          deviceId={id}
+          initialVoltage={{
+            time: momentFormatter(data.last_seen_at),
+            voltage: data.voltage,
+          }}
+        />
       </CardContainer>
     </div>
   )

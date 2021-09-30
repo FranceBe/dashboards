@@ -1,7 +1,7 @@
 // Global App container
 // Handles routing & displaying containers matching the routes
 import React from 'react'
-import { Redirect, Route, Switch, withRouter } from 'react-router'
+import { Redirect, Route, Switch, withRouter } from 'react-router-dom'
 import { Routable } from 'types/route'
 import { routes } from 'utils/routes'
 

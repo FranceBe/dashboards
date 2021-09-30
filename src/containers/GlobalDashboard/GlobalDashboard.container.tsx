@@ -8,9 +8,9 @@ import {
 } from 'containers/GlobalDashboard/globalDasboard.style'
 import {
   getConnectionTypeData,
-  getInfoTableData,
-  getStatusDeviceLength,
-  getVoltageStat,
+  getDeviceLengthByStatus,
+  mapInfoTableData,
+  mapVoltageStat,
 } from 'containers/GlobalDashboard/globalDashboard.utils'
 import InfoTable from 'containers/InfoTable'
 import StatusStat from 'containers/StatusStat'
@@ -24,30 +24,25 @@ export const GlobalDashboard: React.FC = () => {
   // We could add a "refresh" button or a real-time refresh to
   // Get fresh data anytime without clicking on browser "reload" button
   const { data } = useFetch<DashboardDeviceable>('/api/devices')
-  let devicesData
-  if (data && Array.isArray(data) && data.length) {
-    devicesData = data
+
+  if (!data || !Array.isArray(data)) {
+    return <Loading />
   }
+
   return (
     <Dashboard>
-      {devicesData ? (
-        <>
-          <h1>Global Dashboard</h1>
-          <ChartsContainer>
-            <VoltageStat devicesVoltage={getVoltageStat(devicesData)} />
-            <ConnectionTypeStat devicesConnectionType={getConnectionTypeData(devicesData)} />
-            <StatusStat
-              connectedLength={getStatusDeviceLength(devicesData, 'connected')}
-              disconnectedLength={getStatusDeviceLength(devicesData, 'disconnected')}
-            />
-          </ChartsContainer>
-          <InfoTableContainer>
-            <InfoTable devicesInfo={getInfoTableData(devicesData)} />
-          </InfoTableContainer>
-        </>
-      ) : (
-        <Loading />
-      )}
+      <h1>Global Dashboard</h1>
+      <ChartsContainer>
+        <VoltageStat devicesVoltage={mapVoltageStat(data)} />
+        <ConnectionTypeStat devicesConnectionType={getConnectionTypeData(data)} />
+        <StatusStat
+          connectedLength={getDeviceLengthByStatus(data, 'connected')}
+          disconnectedLength={getDeviceLengthByStatus(data, 'disconnected')}
+        />
+      </ChartsContainer>
+      <InfoTableContainer>
+        <InfoTable devicesInfo={mapInfoTableData(data)} />
+      </InfoTableContainer>
     </Dashboard>
   )
 }

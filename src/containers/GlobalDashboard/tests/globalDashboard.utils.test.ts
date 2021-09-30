@@ -1,8 +1,8 @@
 import {
   getConnectionTypeData,
-  getInfoTableData,
-  getStatusDeviceLength,
-  getVoltageStat,
+  getDeviceLengthByStatus,
+  mapInfoTableData,
+  mapVoltageStat,
 } from 'containers/GlobalDashboard/globalDashboard.utils'
 import { ConnectionTypeDataable } from 'types/connectionType'
 import { DashboardDeviceable } from 'types/dashboardDevice'
@@ -32,9 +32,9 @@ describe('GlobalDashboard Utils', () => {
       voltage: 14.84,
     },
   ]
-  describe('getInfoTableData', () => {
+  describe('mapInfoTableData', () => {
     it('should return InfoTableable[] type shape data when DashboardDeviceable[] type params in provided', () => {
-      const result: InfoTableable[] = getInfoTableData(param)
+      const result: InfoTableable[] = mapInfoTableData(param)
       expect(result).toEqual([
         {
           connection_type: param[0].connection_type,
@@ -55,9 +55,9 @@ describe('GlobalDashboard Utils', () => {
       ])
     })
   })
-  describe('getVoltageStat', () => {
+  describe('mapVoltageStat', () => {
     it('should return VoltageStatable[] type shape data when DashboardDeviceable[] type params in provided', () => {
-      const result: VoltageStatable[] = getVoltageStat(param)
+      const result: VoltageStatable[] = mapVoltageStat(param)
       expect(result).toEqual([
         {
           name: param[0].serial_number,
@@ -80,10 +80,10 @@ describe('GlobalDashboard Utils', () => {
       ])
     })
   })
-  describe('getStatusDeviceLength', () => {
+  describe('getDeviceLengthByStatus', () => {
     it('should return the length of device matching the status provided', () => {
-      const resultConnected: number = getStatusDeviceLength(param, 'connected')
-      const resultDisconnected: number = getStatusDeviceLength(param, 'disconnected')
+      const resultConnected: number = getDeviceLengthByStatus(param, 'connected')
+      const resultDisconnected: number = getDeviceLengthByStatus(param, 'disconnected')
       expect(resultConnected).toEqual(1)
       expect(resultDisconnected).toEqual(1)
     })

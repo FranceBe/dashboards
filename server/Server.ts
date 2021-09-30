@@ -6,8 +6,8 @@ const bodyParser = require('body-parser')
 const chalk = require('chalk')
 const cors = require('cors')
 
-import { Serverable } from '../types/server'
 import { config as webpackConfig } from '../webpack.config'
+import { Serverable } from './types/server'
 
 require('dotenv').config()
 const frontSrcBasedir = resolve(__dirname, '..', 'dist', 'src')
@@ -73,12 +73,14 @@ export class Server implements Serverable {
   }
 
   public start(): void {
+    // Call init function to init server with all needed routes & config
     this.init()
+    // Start server and listen on port $PORT (4000 by default)
     this.server = this.app.listen(this.port, () =>
       console.log(
-        `${chalk.yellow('⚡')}️ [server]: ${chalk.green('Server')} is running ${chalk.yellow(
-          '⚡',
-        )}`,
+        `${chalk.yellow('⚡')}️ [server]: ${chalk.green('Server')} is running in port ${
+          this.port
+        } ${chalk.yellow('⚡')}`,
       ),
     )
   }

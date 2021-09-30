@@ -15,7 +15,7 @@ describe('ConnectionType', () => {
     const { container } = render(<ConnectionType devicesConnectionType={devicesConnectionType} />)
     expect(container.firstChild).toMatchSnapshot()
   })
-  it('should render a ChartBar component', () => {
+  it('should render a ChartPie component', () => {
     render(<ConnectionType devicesConnectionType={devicesConnectionType} />)
     expect(screen.getByTestId('chart-pie')).toBeInTheDocument()
   })
