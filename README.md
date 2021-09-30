@@ -34,7 +34,7 @@ docker-compose up
 ```
 
 
-/!\ It might take few minutes to start because of the `npm i` command and the `webpack` build for front-end app and storybook. /!\
+/!\ It might take few minutes *(at least the first time)* to start because of the `npm install` command and the `webpack` build for front-end app and storybook. /!\
 
 App will be accessible by default on port `4000` and storybook on port `6006`.
 
@@ -60,6 +60,8 @@ Both `storybook` and `app` ports are set in environment variables, if you want t
 
 If you are using [avn](https://www.npmjs.com/package/avn), there is a `node-version` file that
 will automatically set your node version to 16.3.0
+
+See [All commands](#all-commands) for more information.
 
 ## Note
 
@@ -95,7 +97,7 @@ The App have 2 routes :
   The live chart can be started and stopped at any time.
 
 
-#### Possible improvement
+#### Possible improvements
 
 - For timing reason I decided not to make this application responsive.
 - For timing reason I decided to make more efforts on the technical side than on the design.
@@ -105,6 +107,8 @@ The App have 2 routes :
 - I choose to use the global fetch method to call the back-end server from the front-end but a more powerful library would be better
   to handle cache, refresh & performance.
 - Using yarn instead of npm
+- I used `COPY . .` in the DockerFile to make it easier to work but a best practice would be to copy
+  only what is needed for the App to work. It would make it quicker to build and run images if it was optimized.
 
 #### Architecture and best practices
 
