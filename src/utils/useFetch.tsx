@@ -1,12 +1,12 @@
 // Custom hook to call an API using fetch and cache
-// Cache handling coule be improved if we wanted to get
+// Cache handling could be improved if we want to get
 // real-time information or if we want to get a "refresh" action
 import { useEffect, useState } from 'react'
 
-// Creating cache to avoid recall api if data has already been fetch
+// Creating cache to avoid recalling api if data has already been fetched
 const cache: Record<string, any> = {}
 
-export const useFetch = <T,>(url: string): { data: T | T[] | undefined; status: string } => {
+export const useFetch = <T,>(url: string): { data?: T | T[]; status: string } => {
   const [status, setStatus] = useState('idle')
   const [data, setData] = useState()
 
@@ -27,6 +27,11 @@ export const useFetch = <T,>(url: string): { data: T | T[] | undefined; status: 
         .then((res) => res.json())
         .then((data) => {
           if (shouldUpdateState) {
+            // In this scenario the backend api 'quizz-back'
+            // respond with either a key "results" and an array (/devices)
+            // or with an object with no "result" key (/device/id)
+            // In order to get data correctly, we check if
+            // the key "results" exists before saving the data we want
             cache[url] = data.results ? data.results : data
             setData(data.results ? data.results : data)
           }

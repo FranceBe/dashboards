@@ -6,7 +6,7 @@ import Button from 'components/Button'
 import React from 'react'
 
 describe('Button', () => {
-  it('should match snapshot when enable', () => {
+  it('should match snapshot when enabled', () => {
     const { container } = render(<Button>Button text</Button>)
     expect(container.firstChild).toMatchSnapshot()
   })

@@ -8,12 +8,12 @@ import React from 'react'
 import { StatusProps } from 'types/status'
 
 export const Status: React.FC<StatusProps> = ({ status }) => {
-  const statusIcon =
-    status === 'disconnected' ? (
-      <SignalCellularOffIcon data-testid={'signal-off'} />
-    ) : (
-      <SignalCellular4BarIcon data-testid={'signal-on'} />
-    )
+  const isDisconnected = status === 'disconnected'
+  const statusIcon = isDisconnected ? (
+    <SignalCellularOffIcon data-testid={'signal-off'} />
+  ) : (
+    <SignalCellular4BarIcon data-testid={'signal-on'} />
+  )
 
   return (
     <StatusContainer

@@ -9,7 +9,7 @@ exports[`Button should match snapshot when disabled 1`] = `
 </button>
 `;
 
-exports[`Button should match snapshot when enable 1`] = `
+exports[`Button should match snapshot when enabled 1`] = `
 <button
   class="sc-bdnxRM dcFAlz"
 >

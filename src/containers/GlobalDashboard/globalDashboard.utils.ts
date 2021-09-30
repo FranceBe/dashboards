@@ -4,7 +4,7 @@ import { InfoTableable } from 'types/infoTable'
 import { VoltageStatable } from 'types/voltageStat'
 
 // To display correctly InfoTable container we need to format data into InfoTableable[] shape data
-export const getInfoTableData = (devices: DashboardDeviceable[]): InfoTableable[] =>
+export const mapInfoTableData = (devices: DashboardDeviceable[]): InfoTableable[] =>
   devices.map((device: DashboardDeviceable) => ({
     connection_type: device.connection_type,
     last_seen_at: device.last_seen_at,
@@ -15,7 +15,7 @@ export const getInfoTableData = (devices: DashboardDeviceable[]): InfoTableable[
   }))
 
 // To display correctly VoltageStat container we need to format data into VoltageStatable[] shape data
-export const getVoltageStat = (devices: DashboardDeviceable[]): VoltageStatable[] =>
+export const mapVoltageStat = (devices: DashboardDeviceable[]): VoltageStatable[] =>
   devices.map((device: DashboardDeviceable) => ({
     name: device.serial_number,
     voltage: device.voltage,
@@ -34,7 +34,7 @@ export const getConnectionTypeData = (devices: DashboardDeviceable[]): Connectio
 }
 
 // To display correctly StatusStat container we need to find the number of devices matching the provided status
-export const getStatusDeviceLength = (
+export const getDeviceLengthByStatus = (
   devices: DashboardDeviceable[],
   status: 'connected' | 'disconnected',
 ): number => devices.filter((device) => device.status === status).length

@@ -2,7 +2,7 @@
  * @jest-environment node
  */
 
-import { Serverable } from '../../types/server'
+import { Serverable } from '../types/server'
 const jestExpress = require('jest-express')
 import { Server } from '../Server'
 describe('Server', () => {
@@ -46,9 +46,9 @@ describe('Server', () => {
     const testServer: Serverable = new Server({ port: 4000 })
     // Mocking the server attribute
     testServer.server = new ServerMock()
-    // If server has an instance and a server property with close
-    // Mock close, then stop the Server to check it correctly
-    // has called closed and process.exit
+    // If server has an instance and a "server" property with "close"
+    // Mock "close", then stop the Server to check it correctly
+    // has called "close" and "process.exit"
     if (testServer && testServer.server && testServer.server.close) {
       testServer.server.close = jest.fn()
       testServer.stop()
@@ -62,9 +62,9 @@ describe('Server', () => {
     const testServer: Serverable = new Server({ port: 4000 })
     // Mocking the app attribute
     testServer.app = express()
-    // If server has an instance and a app property with use
-    // Mock use, then init the Server to check it correctly
-    // has called use 3 times and get 3 times ('/api/devices', '/api/device/:id' & '/')
+    // If server has an instance and an "app" property with "use"
+    // Mock "use", then init the Server to check it correctly
+    // has called "use" 3 times and "get" 3 times ('/api/devices', '/api/device/:id' & '/')
     if (testServer && testServer.app && testServer.app.use && testServer.app.get) {
       testServer.app.use = jest.fn()
       testServer.app.get = jest.fn()
@@ -80,9 +80,9 @@ describe('Server', () => {
     const testServer: Serverable = new Server({ port: 4000 })
     // Mocking the app attribute
     testServer.app = express()
-    // If server has an instance and a app property with listen
-    // Mock listen, then start the Server to check it correctly
-    // has called listen once
+    // If server has an instance and a "app" property with "listen"
+    // Mock "listen", then start the Server to check it correctly
+    // has called "listen" once
     if (testServer && testServer.app && testServer.app.listen) {
       testServer.init = jest.fn()
       testServer.app.listen = jest.fn()

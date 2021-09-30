@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom'
 import { InfoTableable } from 'types/infoTable'
 import { momentFormatter } from 'utils/momentFormatter'
 
+const sortAlphaNumeric = (a: string, b: string): number =>
+  a.toLowerCase().localeCompare(b.toLowerCase(), undefined, {
+    numeric: true,
+    sensitivity: 'base',
+  })
 // Set up for react-data-table component
 // Define each column with data we need to show and sort
 export const columns: TableColumn<InfoTableable>[] = [
@@ -20,21 +25,13 @@ export const columns: TableColumn<InfoTableable>[] = [
         </Link>
       )
     },
-    sortFunction: (rowA, rowB) =>
-      rowA.name.toLowerCase().localeCompare(rowB.name.toLowerCase(), undefined, {
-        numeric: true,
-        sensitivity: 'base',
-      }),
+    sortFunction: (rowA, rowB) => sortAlphaNumeric(rowA.name, rowB.name),
     sortable: true,
   },
   {
     name: 'mac_wifi',
     selector: (row: InfoTableable) => row.mac_wifi,
-    sortFunction: (rowA, rowB) =>
-      rowA.mac_wifi.toLowerCase().localeCompare(rowB.mac_wifi.toLowerCase(), undefined, {
-        numeric: true,
-        sensitivity: 'base',
-      }),
+    sortFunction: (rowA, rowB) => sortAlphaNumeric(rowA.mac_wifi, rowB.mac_wifi),
     sortable: true,
   },
   {
@@ -53,16 +50,14 @@ export const columns: TableColumn<InfoTableable>[] = [
     grow: 0.5,
     name: 'connection_type',
     selector: (row: InfoTableable) => <ConnectionType connection_type={row.connection_type} />,
-    sortFunction: (rowA, rowB) =>
-      rowA.connection_type.toLowerCase().localeCompare(rowB.connection_type.toLowerCase()),
+    sortFunction: (rowA, rowB) => sortAlphaNumeric(rowA.connection_type, rowB.connection_type),
     sortable: true,
   },
   {
     grow: 0,
     name: 'status',
     selector: (row: InfoTableable) => <Status status={row.status} />,
-    sortFunction: (rowA, rowB) =>
-      rowA.status.toLowerCase().localeCompare(rowB.status.toLowerCase()),
+    sortFunction: (rowA, rowB) => sortAlphaNumeric(rowA.status, rowB.status),
     sortable: true,
   },
 ]

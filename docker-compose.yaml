@@ -17,24 +17,22 @@ services:
     build:
       context: ./
     restart: always
-    ports:
-      - 4000:4000
     volumes:
       - ./:/app
-    depends_on:
-      - backend
-    links:
-      - backend
     environment:
       - NODE_ENV=production
       - DOCKER_RUNNING=true
+      - PORT=${PORT}
+      - PORT_STORYBOOK=${PORT_STORYBOOK}
+    ports:
+      - ${PORT}:${PORT}
   storybook:
     build:
       context: ./
     image: storybook
     command: npm run storybook
     ports:
-    - 6006:6006
+    - ${PORT_STORYBOOK}:6006
     volumes:
     - /app/node_modules
     -  ./:/app

@@ -17,29 +17,27 @@ describe('useFetch', () => {
   })
 
   it('should call fetch only when cache is empty', async () => {
-    let dataMocked
-    let statusMocked
-    await waitFor(() =>
-      renderHook(() => {
-        const { data, status } = useFetch('/')
-        dataMocked = data
-        statusMocked = status
-      }),
-    )
-    expect(fetch).toHaveBeenCalledTimes(1)
-    expect(fetch).toHaveBeenCalledWith('/')
-    expect(dataMocked).toEqual([
-      { id: '1', name: 'name1' },
-      { id: '2', name: 'name2' },
-    ])
-    expect(statusMocked).toBe('fetched')
+    const { result } = renderHook(() => useFetch('/'))
+
+    await waitFor(() => {
+      expect(fetch).toHaveBeenCalledTimes(1)
+      expect(fetch).toHaveBeenCalledWith('/')
+      expect(result.current.data).toEqual([
+        { id: '1', name: 'name1' },
+        { id: '2', name: 'name2' },
+      ])
+      expect(result.current.status).toBe('fetched')
+    })
 
     // Call hook another time to check that fetch is not called again
-    await waitFor(() => renderHook(() => useFetch('/')))
+    renderHook(() => useFetch('/'))
 
+    await waitFor(() => {
+      // fetch is called once, corresponding to the 1st time useFetch has been called
+      // but is not called another time when useFetch is called again
+      // because cache has been set
+      expect(fetch).toHaveBeenCalledTimes(1)
+    })
     expect(fetch).toHaveBeenCalledTimes(1)
-    // fetch is called once, corresponding to the 1st time useFetch has been called
-    // but is not called another time when useFetch is called again
-    // because cache has been set
   })
 })
