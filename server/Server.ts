@@ -16,7 +16,7 @@ const staticMw = staticFactory(frontSrcBasedir)
 
 let baseUrl = 'http://localhost'
 if (process.env.DOCKER_RUNNING === 'true') {
-  baseUrl = 'http://host.docker.internal'
+  baseUrl = 'http://backend'
 }
 export class Server implements Serverable {
   public app: Express

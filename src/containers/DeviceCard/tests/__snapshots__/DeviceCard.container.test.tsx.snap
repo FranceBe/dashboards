@@ -139,7 +139,7 @@ exports[`DeviceCard should match snapshot 1`] = `
       >
         Serial number
       </div>
-       : 
+       :
       <div
         class="c4"
       >
@@ -197,7 +197,7 @@ exports[`DeviceCard should match snapshot 1`] = `
         >
           Last seen at
         </div>
-         : 
+         :
         <div
           class="c4"
         >
@@ -223,7 +223,7 @@ exports[`DeviceCard should match snapshot 1`] = `
         >
           Connection type
         </div>
-         : 
+         :
         <div
           class="c4"
         >
@@ -248,7 +248,7 @@ exports[`DeviceCard should match snapshot 1`] = `
         >
           Voltage
         </div>
-         : 
+         :
         <div
           class="c4"
         >
@@ -277,7 +277,7 @@ exports[`DeviceCard should match snapshot 1`] = `
         >
           Mac wifi
         </div>
-         : 
+         :
         <div
           class="c4"
         >
@@ -302,7 +302,7 @@ exports[`DeviceCard should match snapshot 1`] = `
         >
           Sim id
         </div>
-         : 
+         :
         <div
           class="c4"
         >
@@ -327,14 +327,14 @@ exports[`DeviceCard should match snapshot 1`] = `
         >
           Url
         </div>
-         : 
+         :
         <div
           class="c4"
         >
           <a
-            href="http://localhost:8010/device/1"
+            href="http://backend:8010/device/1"
           >
-            http://localhost:8010/device/1
+            http://backend:8010/device/1
           </a>
         </div>
       </div>

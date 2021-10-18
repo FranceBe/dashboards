@@ -15,7 +15,7 @@ const device: DashboardDeviceable = {
   serial_number: 'device_1',
   sim_id: 73383683,
   status: 'disconnected',
-  url: 'http://localhost:8010/device/1',
+  url: 'http://backend:8010/device/1',
   voltage: 8.167522699950393,
 }
 

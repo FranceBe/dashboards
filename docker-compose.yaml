@@ -24,6 +24,8 @@ services:
       - DOCKER_RUNNING=true
       - PORT=${PORT}
       - PORT_STORYBOOK=${PORT_STORYBOOK}
+    links:
+      - backend:backend
     ports:
       - ${PORT}:${PORT}
   storybook:

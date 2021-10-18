@@ -15,7 +15,7 @@ describe('DeviceCard', () => {
     serial_number: 'device_1',
     sim_id: 73383683,
     status: 'disconnected',
-    url: 'http://localhost:8010/device/1',
+    url: 'http://backend:8010/device/1',
     voltage: 8.167522699950393,
   }
   it('should match snapshot', () => {
@@ -37,6 +37,6 @@ describe('DeviceCard', () => {
     expect(screen.getByText('Sim id')).toBeInTheDocument()
     expect(screen.getByText('73383683')).toBeInTheDocument()
     expect(screen.getByText('Url')).toBeInTheDocument()
-    expect(screen.getByText('http://localhost:8010/device/1')).toBeInTheDocument()
+    expect(screen.getByText('http://backend:8010/device/1')).toBeInTheDocument()
   })
 })
