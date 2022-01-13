@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Status Given status is "connected" should match snapshot 1`] = `
+.c0 {
+  background-color: #00C9A3;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 0.75rem;
+  box-shadow: 0 5px 25px 0 rgba(0,0,45,0.1),0 2px 6px 0 rgba(0,0,0,0.04), 0 16px 24px 0 rgba(0,0,46,0.06);
+}
+
+<div
+  class="c0 status-container"
+  data-testid="status-container"
+  status="connected"
+>
+  <svg
+    aria-hidden="true"
+    class="MuiSvgIcon-root"
+    data-testid="signal-on"
+    focusable="false"
+    title="connected"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M2 22h20V2z"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Status Given status is "disconnected" should match snapshot 1`] = `
+.c0 {
+  background-color: #eb4034;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 0.75rem;
+  box-shadow: 0 5px 25px 0 rgba(0,0,45,0.1),0 2px 6px 0 rgba(0,0,0,0.04), 0 16px 24px 0 rgba(0,0,46,0.06);
+}
+
+<div
+  class="c0 status-container"
+  data-testid="status-container"
+  status="disconnected"
+>
+  <svg
+    aria-hidden="true"
+    class="MuiSvgIcon-root"
+    data-testid="signal-off"
+    focusable="false"
+    title="disconnected"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M21 1l-8.59 8.59L21 18.18V1zM4.77 4.5L3.5 5.77l6.36 6.36L1 21h17.73l2 2L22 21.73 4.77 4.5z"
+    />
+  </svg>
+</div>
+`;

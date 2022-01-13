@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoTable Utils columns should match snapshot 1`] = `
+Array [
+  Object {
+    "grow": 1,
+    "name": "serial_number",
+    "selector": [Function],
+    "sortFunction": [Function],
+    "sortable": true,
+  },
+  Object {
+    "name": "mac_wifi",
+    "selector": [Function],
+    "sortFunction": [Function],
+    "sortable": true,
+  },
+  Object {
+    "name": "sim_id",
+    "selector": [Function],
+    "sortable": true,
+  },
+  Object {
+    "name": "last_seen_at",
+    "selector": [Function],
+    "sortable": true,
+  },
+  Object {
+    "grow": 0.5,
+    "name": "connection_type",
+    "selector": [Function],
+    "sortFunction": [Function],
+    "sortable": true,
+  },
+  Object {
+    "grow": 0,
+    "name": "status",
+    "selector": [Function],
+    "sortFunction": [Function],
+    "sortable": true,
+  },
+]
+`;

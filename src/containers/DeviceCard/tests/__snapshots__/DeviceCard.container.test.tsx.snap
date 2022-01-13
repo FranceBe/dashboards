@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeviceCard should match snapshot 1`] = `
+.c6 {
+  background-color: #eb4034;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 0.75rem;
+  box-shadow: 0 5px 25px 0 rgba(0,0,45,0.1),0 2px 6px 0 rgba(0,0,0,0.04), 0 16px 24px 0 rgba(0,0,46,0.06);
+}
+
+.c0 {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 8px 32px;
+  box-shadow: 0 5px 25px 0 rgba(0,0,45,0.1),0 2px 6px 0 rgba(0,0,0,0.04), 0 16px 24px 0 rgba(0,0,46,0.06);
+  border: 1px solid #343536;
+  border-radius: 4px;
+  font-size: 1.25rem;
+}
+
+.c0 .small-icon {
+  margin-right: 4px;
+  color: #0061A9;
+}
+
+.c0 .status-container {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+
+.c0 .status-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+.c7 {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #0061A9;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c5 .info-container {
+  margin-bottom: 16px;
+}
+
+.c5.status-column {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 {
+  color: #0061A9;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c4 {
+  margin-left: 4px;
+}
+
+<div
+  class="c0"
+  data-testid="device-card"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+      >
+        Serial number
+      </div>
+       :
+      <div
+        class="c4"
+      >
+        device_1
+      </div>
+    </div>
+    <div
+      class="c5 status-column"
+    >
+      <div
+        class="c6 status-container"
+        data-testid="status-container"
+        status="disconnected"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root"
+          data-testid="signal-off"
+          focusable="false"
+          title="disconnected"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M21 1l-8.59 8.59L21 18.18V1zM4.77 4.5L3.5 5.77l6.36 6.36L1 21h17.73l2 2L22 21.73 4.77 4.5z"
+          />
+        </svg>
+      </div>
+      Disconnected
+    </div>
+  </div>
+  <div
+    class="c7"
+  />
+  <div
+    class="c1"
+  >
+    <div
+      class="c5"
+    >
+      <div
+        class="c2 info-container"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root small-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
+          />
+        </svg>
+        <div
+          class="c3"
+        >
+          Last seen at
+        </div>
+         :
+        <div
+          class="c4"
+        >
+          September 27th 2021, 2:59:09 pm
+        </div>
+      </div>
+      <div
+        class="c2 info-container"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root small-icon"
+          data-testid="icon-cellular"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 4h3v16h-3zM5 14h3v6H5zm6-5h3v11h-3z"
+          />
+        </svg>
+        <div
+          class="c3"
+        >
+          Connection type
+        </div>
+         :
+        <div
+          class="c4"
+        >
+          cellular
+        </div>
+      </div>
+      <div
+        class="c2 info-container"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root small-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 2v11h3v9l7-12h-4l4-8z"
+          />
+        </svg>
+        <div
+          class="c3"
+        >
+          Voltage
+        </div>
+         :
+        <div
+          class="c4"
+        >
+          8.167522699950393
+        </div>
+      </div>
+    </div>
+    <div
+      class="c5"
+    >
+      <div
+        class="c2 info-container"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root small-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8.46 14.45l-1.36-.62c.28-.61.41-1.24.4-1.86-.01-.63-.14-1.24-.4-1.8l1.36-.63c.35.75.53 1.56.54 2.4.01.86-.17 1.7-.54 2.51zm3.07 1.56l-1.3-.74c.52-.92.78-1.98.78-3.15 0-1.19-.27-2.33-.8-3.4l1.34-.67c.64 1.28.96 2.65.96 4.07 0 1.43-.33 2.74-.98 3.89zm3.14 1.32l-1.35-.66c.78-1.6 1.18-3.18 1.18-4.69 0-1.51-.4-3.07-1.18-4.64l1.34-.67c.9 1.78 1.34 3.56 1.34 5.31 0 1.74-.44 3.54-1.33 5.35z"
+          />
+        </svg>
+        <div
+          class="c3"
+        >
+          Mac wifi
+        </div>
+         :
+        <div
+          class="c4"
+        >
+          44:20:82:3c:fd:e6
+        </div>
+      </div>
+      <div
+        class="c2 info-container"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root small-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M22 10V6c0-1.11-.9-2-2-2H4c-1.1 0-1.99.89-1.99 2v4c1.1 0 1.99.9 1.99 2s-.89 2-2 2v4c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-4c-1.1 0-2-.9-2-2s.9-2 2-2zm-9 7.5h-2v-2h2v2zm0-4.5h-2v-2h2v2zm0-4.5h-2v-2h2v2z"
+          />
+        </svg>
+        <div
+          class="c3"
+        >
+          Sim id
+        </div>
+         :
+        <div
+          class="c4"
+        >
+          73383683
+        </div>
+      </div>
+      <div
+        class="c2 info-container"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root small-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+          />
+        </svg>
+        <div
+          class="c3"
+        >
+          Url
+        </div>
+         :
+        <div
+          class="c4"
+        >
+          <a
+            href="http://backend:8010/device/1"
+          >
+            http://backend:8010/device/1
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

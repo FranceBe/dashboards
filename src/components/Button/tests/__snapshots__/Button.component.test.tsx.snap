@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should match snapshot when disabled 1`] = `
+<button
+  class="sc-bdnxRM dcFAlz"
+  disabled=""
+>
+  Button text
+</button>
+`;
+
+exports[`Button should match snapshot when enabled 1`] = `
+<button
+  class="sc-bdnxRM dcFAlz"
+>
+  Button text
+</button>
+`;
